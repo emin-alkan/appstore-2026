@@ -66,4 +66,4 @@ Code: MIT. Dataset: CC BY 4.0. Not affiliated with Apple.
 
 ---
 
-Built by **[Emin Alkan](https://github.com/emin-alkan)** · If this is useful, a ⭐ helps.
+Built by **[Emin Alkan](https://github.com/emin-alkan)** · [@miraisama_](https://x.com/miraisama_) · If this is useful, a ⭐ helps.
