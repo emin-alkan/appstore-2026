@@ -4,7 +4,7 @@ A complete, **November 2026** snapshot of the public Apple App Store — **1,613
 
 The most-used open App Store dataset (gauthamp10, 2021) is four years old and predates the entire AI-app wave. This one is newer, comes with the analysis, and ships a live tool on top of it.
 
-**[→ Open the live app (map + finder)](https://emin-alkan.github.io/appstore-2026/)** · Dataset: *(Kaggle / HuggingFace link — coming)*
+**[→ Open the live app (map + finder)](https://emin-alkan.github.io/appstore-2026/)** · Dataset: **[Hugging Face](https://huggingface.co/datasets/emin-alkan/appstore-2026)**
 
 ---
 
@@ -49,7 +49,7 @@ Full scrape runs in ~10 h from a single machine; embedding + mapping ~22 min on 
 
 - `data/` — the small analysis outputs: category stats, 50-cluster summary, sparse regions, a 40k-point sample.
 - `docs/data/cat/` — 26 per-category Parquet files (~85 MB total) that power the web finder.
-- The full raw dataset (~2.9 GB) is **not** in the repo; it's hosted on **[Kaggle / HuggingFace]** *(link coming)* under CC BY 4.0.
+- The full raw dataset (~2.9 GB) is **not** in the repo; it's hosted on **[Hugging Face](https://huggingface.co/datasets/emin-alkan/appstore-2026)** (Parquet + raw JSONL) under CC BY 4.0.
 
 ## Scope & limitations
 
