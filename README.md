@@ -29,7 +29,7 @@ Two tabs, both 100% client-side (no backend):
 
 - **Half the store is a graveyard.** 53.6% of all apps have *zero* ratings. Only **7.2%** ever cross 100 ratings — the real "someone uses this" line.
 - **There is no empty niche.** Embed all 1.6M descriptions and reduce to 2D, and there's almost no region that is surrounded yet truly empty. "Find the gap" works on 146k Steam games; at 1.6M apps every corner is filled.
-- **The store grew and got younger.** 80.8% of apps were updated in 2024 or later, and Sensor Tower reported ~560k new apps in H1 2026 alone. Against the 2021 snapshot the growth skews to *tools over games* — Health & Fitness, Utilities, Productivity and Finance all grew sharply while Games barely moved. (Exact deltas mix two independently-scraped datasets, so read them as directional.)
+- **The store grew and got younger.** 80.8% of apps were updated in 2024 or later — a very young store. Against the 2021 snapshot the growth skews to *tools over games* — Health & Fitness, Utilities, Productivity and Finance all grew sharply while Games barely moved. (Exact deltas mix two independently-scraped datasets, so read them as directional.)
 - **The AI wave is concentrated.** Share of apps whose description mentions AI: Notes/Books cluster **40%**, Voice/Speech **38%**, Recipes **31%**, Photo/Image **29%** — but Food & Drink and Shopping barely **3%**.
 - **The deadest clusters are white-label single-business apps** — one-restaurant ordering (71% dead), event/conference apps (70%), staff-management apps (73%). A whole mode to avoid.
 - **Healthiest by real usage:** game clusters (18–21% traction) and banking (20%) — but banking is owned by actual banks.
