@@ -1,0 +1,556 @@
+{
+ "source": "apps_2026.jsonl",
+ "generated_at": "2026-11-09 10:48:29",
+ "notes": {
+  "graveyard_pct": "userRatingCount == 0 yüzdesi",
+  "traction_pct": "userRatingCount >= 100 yüzdesi",
+  "median_rating": "yalnızca userRatingCount > 0",
+  "fresh_2024plus_pct": "currentVersionReleaseDate yılı >= 2024",
+  "ai": "description küçük harf; ai/llm/chatbot kelime sınırlı, gpt ve 'artificial intelligence' alt dize. ai_naive_substring_apps = düz alt dize araması (yanıltıcı, karşılaştırma için)",
+  "price": "ABD mağazası uygulama fiyatı (USD); uygulama içi satın alma dahil değil"
+ },
+ "category_count": 26,
+ "bad_lines": 0,
+ "total": {
+  "apps": 1613165,
+  "graveyard_pct": 53.57,
+  "traction_pct": 7.2,
+  "paid_pct": 2.79,
+  "avg_paid_price": 6.1,
+  "median_rating": 4.667,
+  "rated_apps": 748967,
+  "fresh_2024plus_pct": 80.8,
+  "ai_apps": 124971,
+  "ai_pct": 7.75,
+  "ai_terms": {
+   "ai": 121390,
+   "gpt": 3685,
+   "chatbot": 3314,
+   "artificial intelligence": 6902,
+   "llm": 755
+  },
+  "ai_naive_substring_apps": 949282
+ },
+ "categories": {
+  "Games": {
+   "apps": 190021,
+   "graveyard_pct": 32.39,
+   "traction_pct": 18.27,
+   "paid_pct": 4.62,
+   "avg_paid_price": 3.85,
+   "median_rating": 4.504,
+   "rated_apps": 128473,
+   "fresh_2024plus_pct": 62.67,
+   "ai_apps": 7210,
+   "ai_pct": 3.79,
+   "ai_terms": {
+    "ai": 6850,
+    "gpt": 48,
+    "chatbot": 37,
+    "artificial intelligence": 580,
+    "llm": 18
+   },
+   "ai_naive_substring_apps": 127065
+  },
+  "Education": {
+   "apps": 172864,
+   "graveyard_pct": 56.13,
+   "traction_pct": 4.25,
+   "paid_pct": 4.52,
+   "avg_paid_price": 7.75,
+   "median_rating": 4.672,
+   "rated_apps": 75840,
+   "fresh_2024plus_pct": 79.99,
+   "ai_apps": 15303,
+   "ai_pct": 8.85,
+   "ai_terms": {
+    "ai": 14794,
+    "gpt": 401,
+    "chatbot": 387,
+    "artificial intelligence": 880,
+    "llm": 118
+   },
+   "ai_naive_substring_apps": 99076
+  },
+  "Utilities": {
+   "apps": 145227,
+   "graveyard_pct": 56.79,
+   "traction_pct": 5.6,
+   "paid_pct": 3.14,
+   "avg_paid_price": 4.93,
+   "median_rating": 4.419,
+   "rated_apps": 62754,
+   "fresh_2024plus_pct": 80.16,
+   "ai_apps": 9719,
+   "ai_pct": 6.69,
+   "ai_terms": {
+    "ai": 9420,
+    "gpt": 325,
+    "chatbot": 289,
+    "artificial intelligence": 588,
+    "llm": 95
+   },
+   "ai_naive_substring_apps": 79865
+  },
+  "Business": {
+   "apps": 139115,
+   "graveyard_pct": 66.28,
+   "traction_pct": 2.74,
+   "paid_pct": 0.61,
+   "avg_paid_price": 13.16,
+   "median_rating": 4.734,
+   "rated_apps": 46910,
+   "fresh_2024plus_pct": 85.28,
+   "ai_apps": 7601,
+   "ai_pct": 5.46,
+   "ai_terms": {
+    "ai": 7269,
+    "gpt": 160,
+    "chatbot": 283,
+    "artificial intelligence": 377,
+    "llm": 25
+   },
+   "ai_naive_substring_apps": 77967
+  },
+  "Lifestyle": {
+   "apps": 127940,
+   "graveyard_pct": 58.74,
+   "traction_pct": 4.32,
+   "paid_pct": 1.21,
+   "avg_paid_price": 5.55,
+   "median_rating": 4.845,
+   "rated_apps": 52785,
+   "fresh_2024plus_pct": 84.76,
+   "ai_apps": 11465,
+   "ai_pct": 8.96,
+   "ai_terms": {
+    "ai": 11246,
+    "gpt": 212,
+    "chatbot": 275,
+    "artificial intelligence": 481,
+    "llm": 27
+   },
+   "ai_naive_substring_apps": 71141
+  },
+  "Health & Fitness": {
+   "apps": 119938,
+   "graveyard_pct": 55.75,
+   "traction_pct": 5.53,
+   "paid_pct": 1.23,
+   "avg_paid_price": 6.15,
+   "median_rating": 4.909,
+   "rated_apps": 53069,
+   "fresh_2024plus_pct": 89.36,
+   "ai_apps": 14271,
+   "ai_pct": 11.9,
+   "ai_terms": {
+    "ai": 13977,
+    "gpt": 265,
+    "chatbot": 379,
+    "artificial intelligence": 485,
+    "llm": 34
+   },
+   "ai_naive_substring_apps": 83327
+  },
+  "Productivity": {
+   "apps": 92525,
+   "graveyard_pct": 59.3,
+   "traction_pct": 4.82,
+   "paid_pct": 2.51,
+   "avg_paid_price": 6.34,
+   "median_rating": 4.667,
+   "rated_apps": 37654,
+   "fresh_2024plus_pct": 86.55,
+   "ai_apps": 13933,
+   "ai_pct": 15.06,
+   "ai_terms": {
+    "ai": 13555,
+    "gpt": 1312,
+    "chatbot": 808,
+    "artificial intelligence": 700,
+    "llm": 251
+   },
+   "ai_naive_substring_apps": 60647
+  },
+  "Food & Drink": {
+   "apps": 88035,
+   "graveyard_pct": 66.98,
+   "traction_pct": 3.51,
+   "paid_pct": 0.43,
+   "avg_paid_price": 4.15,
+   "median_rating": 4.958,
+   "rated_apps": 29069,
+   "fresh_2024plus_pct": 84.14,
+   "ai_apps": 2887,
+   "ai_pct": 3.28,
+   "ai_terms": {
+    "ai": 2825,
+    "gpt": 56,
+    "chatbot": 34,
+    "artificial intelligence": 102,
+    "llm": 3
+   },
+   "ai_naive_substring_apps": 31495
+  },
+  "Finance": {
+   "apps": 67246,
+   "graveyard_pct": 49.56,
+   "traction_pct": 11.8,
+   "paid_pct": 1.05,
+   "avg_paid_price": 4.8,
+   "median_rating": 4.712,
+   "rated_apps": 33920,
+   "fresh_2024plus_pct": 91.35,
+   "ai_apps": 4502,
+   "ai_pct": 6.69,
+   "ai_terms": {
+    "ai": 4275,
+    "gpt": 152,
+    "chatbot": 140,
+    "artificial intelligence": 268,
+    "llm": 27
+   },
+   "ai_naive_substring_apps": 40553
+  },
+  "Entertainment": {
+   "apps": 62749,
+   "graveyard_pct": 46.19,
+   "traction_pct": 8.64,
+   "paid_pct": 3.16,
+   "avg_paid_price": 5.29,
+   "median_rating": 4.5,
+   "rated_apps": 33767,
+   "fresh_2024plus_pct": 74.55,
+   "ai_apps": 4788,
+   "ai_pct": 7.63,
+   "ai_terms": {
+    "ai": 4676,
+    "gpt": 95,
+    "chatbot": 205,
+    "artificial intelligence": 351,
+    "llm": 21
+   },
+   "ai_naive_substring_apps": 36771
+  },
+  "Shopping": {
+   "apps": 57785,
+   "graveyard_pct": 61.69,
+   "traction_pct": 6.14,
+   "paid_pct": 0.18,
+   "avg_paid_price": 3.01,
+   "median_rating": 4.867,
+   "rated_apps": 22135,
+   "fresh_2024plus_pct": 84.87,
+   "ai_apps": 1659,
+   "ai_pct": 2.87,
+   "ai_terms": {
+    "ai": 1623,
+    "gpt": 13,
+    "chatbot": 24,
+    "artificial intelligence": 62,
+    "llm": 0
+   },
+   "ai_naive_substring_apps": 27266
+  },
+  "Travel": {
+   "apps": 54094,
+   "graveyard_pct": 60.62,
+   "traction_pct": 5.14,
+   "paid_pct": 1.62,
+   "avg_paid_price": 4.2,
+   "median_rating": 4.704,
+   "rated_apps": 21302,
+   "fresh_2024plus_pct": 83.68,
+   "ai_apps": 2483,
+   "ai_pct": 4.59,
+   "ai_terms": {
+    "ai": 2370,
+    "gpt": 69,
+    "chatbot": 96,
+    "artificial intelligence": 90,
+    "llm": 5
+   },
+   "ai_naive_substring_apps": 34402
+  },
+  "Sports": {
+   "apps": 52943,
+   "graveyard_pct": 59.33,
+   "traction_pct": 4.59,
+   "paid_pct": 2.22,
+   "avg_paid_price": 6.24,
+   "median_rating": 4.8,
+   "rated_apps": 21533,
+   "fresh_2024plus_pct": 88.04,
+   "ai_apps": 3629,
+   "ai_pct": 6.85,
+   "ai_terms": {
+    "ai": 3561,
+    "gpt": 54,
+    "chatbot": 40,
+    "artificial intelligence": 177,
+    "llm": 7
+   },
+   "ai_naive_substring_apps": 31367
+  },
+  "Music": {
+   "apps": 35935,
+   "graveyard_pct": 39.01,
+   "traction_pct": 8.28,
+   "paid_pct": 9.59,
+   "avg_paid_price": 9.04,
+   "median_rating": 4.669,
+   "rated_apps": 21918,
+   "fresh_2024plus_pct": 76.05,
+   "ai_apps": 2058,
+   "ai_pct": 5.73,
+   "ai_terms": {
+    "ai": 2029,
+    "gpt": 24,
+    "chatbot": 5,
+    "artificial intelligence": 119,
+    "llm": 6
+   },
+   "ai_naive_substring_apps": 20521
+  },
+  "Photo & Video": {
+   "apps": 35881,
+   "graveyard_pct": 39.43,
+   "traction_pct": 11.61,
+   "paid_pct": 5.1,
+   "avg_paid_price": 5.42,
+   "median_rating": 4.5,
+   "rated_apps": 21732,
+   "fresh_2024plus_pct": 75.54,
+   "ai_apps": 7744,
+   "ai_pct": 21.58,
+   "ai_terms": {
+    "ai": 7633,
+    "gpt": 122,
+    "chatbot": 22,
+    "artificial intelligence": 568,
+    "llm": 8
+   },
+   "ai_naive_substring_apps": 25187
+  },
+  "Social Networking": {
+   "apps": 33749,
+   "graveyard_pct": 54.48,
+   "traction_pct": 5.61,
+   "paid_pct": 0.72,
+   "avg_paid_price": 6.12,
+   "median_rating": 4.8,
+   "rated_apps": 15362,
+   "fresh_2024plus_pct": 86.84,
+   "ai_apps": 2418,
+   "ai_pct": 7.16,
+   "ai_terms": {
+    "ai": 2346,
+    "gpt": 75,
+    "chatbot": 88,
+    "artificial intelligence": 111,
+    "llm": 5
+   },
+   "ai_naive_substring_apps": 18071
+  },
+  "Medical": {
+   "apps": 29316,
+   "graveyard_pct": 53.97,
+   "traction_pct": 5.94,
+   "paid_pct": 3.87,
+   "avg_paid_price": 11.75,
+   "median_rating": 4.667,
+   "rated_apps": 13494,
+   "fresh_2024plus_pct": 79.41,
+   "ai_apps": 1981,
+   "ai_pct": 6.76,
+   "ai_terms": {
+    "ai": 1864,
+    "gpt": 38,
+    "chatbot": 61,
+    "artificial intelligence": 151,
+    "llm": 7
+   },
+   "ai_naive_substring_apps": 17558
+  },
+  "Reference": {
+   "apps": 26422,
+   "graveyard_pct": 41.1,
+   "traction_pct": 9.08,
+   "paid_pct": 7.22,
+   "avg_paid_price": 7.33,
+   "median_rating": 4.705,
+   "rated_apps": 15562,
+   "fresh_2024plus_pct": 76.48,
+   "ai_apps": 3288,
+   "ai_pct": 12.44,
+   "ai_terms": {
+    "ai": 3209,
+    "gpt": 58,
+    "chatbot": 72,
+    "artificial intelligence": 169,
+    "llm": 15
+   },
+   "ai_naive_substring_apps": 17068
+  },
+  "News": {
+   "apps": 20142,
+   "graveyard_pct": 53.41,
+   "traction_pct": 9.59,
+   "paid_pct": 0.54,
+   "avg_paid_price": 3.91,
+   "median_rating": 4.587,
+   "rated_apps": 9384,
+   "fresh_2024plus_pct": 79.86,
+   "ai_apps": 1087,
+   "ai_pct": 5.4,
+   "ai_terms": {
+    "ai": 1042,
+    "gpt": 31,
+    "chatbot": 15,
+    "artificial intelligence": 81,
+    "llm": 11
+   },
+   "ai_naive_substring_apps": 10281
+  },
+  "Navigation": {
+   "apps": 18946,
+   "graveyard_pct": 57.47,
+   "traction_pct": 5.81,
+   "paid_pct": 3.94,
+   "avg_paid_price": 7.95,
+   "median_rating": 4.522,
+   "rated_apps": 8057,
+   "fresh_2024plus_pct": 83.53,
+   "ai_apps": 557,
+   "ai_pct": 2.94,
+   "ai_terms": {
+    "ai": 531,
+    "gpt": 7,
+    "chatbot": 6,
+    "artificial intelligence": 29,
+    "llm": 0
+   },
+   "ai_naive_substring_apps": 11727
+  },
+  "Book": {
+   "apps": 16714,
+   "graveyard_pct": 43.54,
+   "traction_pct": 8.55,
+   "paid_pct": 4.09,
+   "avg_paid_price": 6.31,
+   "median_rating": 4.693,
+   "rated_apps": 9437,
+   "fresh_2024plus_pct": 72.91,
+   "ai_apps": 1389,
+   "ai_pct": 8.31,
+   "ai_terms": {
+    "ai": 1367,
+    "gpt": 36,
+    "chatbot": 18,
+    "artificial intelligence": 55,
+    "llm": 3
+   },
+   "ai_naive_substring_apps": 10025
+  },
+  "Graphics & Design": {
+   "apps": 9655,
+   "graveyard_pct": 37.89,
+   "traction_pct": 13.64,
+   "paid_pct": 3.6,
+   "avg_paid_price": 5.99,
+   "median_rating": 4.545,
+   "rated_apps": 5997,
+   "fresh_2024plus_pct": 89.91,
+   "ai_apps": 3723,
+   "ai_pct": 38.56,
+   "ai_terms": {
+    "ai": 3696,
+    "gpt": 54,
+    "chatbot": 8,
+    "artificial intelligence": 436,
+    "llm": 2
+   },
+   "ai_naive_substring_apps": 7793
+  },
+  "Weather": {
+   "apps": 6291,
+   "graveyard_pct": 39.02,
+   "traction_pct": 14.59,
+   "paid_pct": 5.69,
+   "avg_paid_price": 5.09,
+   "median_rating": 4.664,
+   "rated_apps": 3836,
+   "fresh_2024plus_pct": 84.58,
+   "ai_apps": 353,
+   "ai_pct": 5.61,
+   "ai_terms": {
+    "ai": 341,
+    "gpt": 10,
+    "chatbot": 3,
+    "artificial intelligence": 20,
+    "llm": 3
+   },
+   "ai_naive_substring_apps": 4786
+  },
+  "Developer Tools": {
+   "apps": 3758,
+   "graveyard_pct": 51.81,
+   "traction_pct": 4.34,
+   "paid_pct": 6.36,
+   "avg_paid_price": 4.29,
+   "median_rating": 4.688,
+   "rated_apps": 1811,
+   "fresh_2024plus_pct": 88.58,
+   "ai_apps": 816,
+   "ai_pct": 21.71,
+   "ai_terms": {
+    "ai": 787,
+    "gpt": 64,
+    "chatbot": 17,
+    "artificial intelligence": 14,
+    "llm": 61
+   },
+   "ai_naive_substring_apps": 2628
+  },
+  "Stickers": {
+   "apps": 3322,
+   "graveyard_pct": 34.14,
+   "traction_pct": 3.34,
+   "paid_pct": 40.43,
+   "avg_paid_price": 1.3,
+   "median_rating": 4.649,
+   "rated_apps": 2188,
+   "fresh_2024plus_pct": 38.8,
+   "ai_apps": 5,
+   "ai_pct": 0.15,
+   "ai_terms": {
+    "ai": 5,
+    "gpt": 0,
+    "chatbot": 0,
+    "artificial intelligence": 1,
+    "llm": 0
+   },
+   "ai_naive_substring_apps": 1092
+  },
+  "Magazines & Newspapers": {
+   "apps": 2552,
+   "graveyard_pct": 61.68,
+   "traction_pct": 4.08,
+   "paid_pct": 0.39,
+   "avg_paid_price": 3.69,
+   "median_rating": 4.75,
+   "rated_apps": 978,
+   "fresh_2024plus_pct": 88.87,
+   "ai_apps": 102,
+   "ai_pct": 4.0,
+   "ai_terms": {
+    "ai": 99,
+    "gpt": 4,
+    "chatbot": 2,
+    "artificial intelligence": 7,
+    "llm": 3
+   },
+   "ai_naive_substring_apps": 1603
+  }
+ }
+}

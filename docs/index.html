@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>App Store Atlas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#0d0f13; --surface:#161a21; --surface-2:#1b2029; --fg:#e9ecf1; --muted:#a1a8b6; --faint:#6b7280;
+  --line:#242a34; --line-strong:#343c48; --accent:#6ea0ff; --accent-soft:#152037;
+  --dead:#d8503f; --mid:#d59a2a; --alive:#33b277; --pick:#ffcf5a;
+  --good:#33b277; --bad:#d8503f; --warn:#d59a2a;
+  --font-display:"Archivo",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --font-mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme:light){ :root:not([data-theme="dark"]){
+  --bg:#f4f5f8; --surface:#fff; --surface-2:#f1f3f7; --fg:#141821; --muted:#525a68; --faint:#868d9b;
+  --line:#e5e8ee; --line-strong:#d1d6df; --accent:#2f62d8; --accent-soft:#e7eefb;
+  --dead:#c8402f; --mid:#b07d1a; --alive:#1f9460; --pick:#b7820d; --good:#1f9460; --bad:#c8402f; --warn:#b07d1a;
+  color-scheme:light; } }
+:root[data-theme="light"]{
+  --bg:#f4f5f8; --surface:#fff; --surface-2:#f1f3f7; --fg:#141821; --muted:#525a68; --faint:#868d9b;
+  --line:#e5e8ee; --line-strong:#d1d6df; --accent:#2f62d8; --accent-soft:#e7eefb;
+  --dead:#c8402f; --mid:#b07d1a; --alive:#1f9460; --pick:#b7820d; --good:#1f9460; --bad:#c8402f; --warn:#b07d1a;
+  color-scheme:light; }
+*{box-sizing:border-box;}
+html,body{margin:0;}
+body{background:var(--bg);color:var(--fg);font-family:var(--font-display);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased;padding-bottom:env(safe-area-inset-bottom,0);}
+a{color:var(--accent);}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));}
+
+header.bar{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px);}
+.bar-in{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding-block:12px;}
+.brand{font-weight:800;letter-spacing:-0.02em;font-size:1.15rem;margin-right:auto;}
+.brand span{color:var(--accent);}
+.tabs{display:inline-flex;background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:3px;}
+.tabs button{font:inherit;font-weight:600;font-size:0.9rem;color:var(--muted);background:transparent;border:0;border-radius:7px;padding:6px 16px;cursor:pointer;}
+.tabs button[aria-selected="true"]{background:var(--fg);color:var(--bg);}
+.lang{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;}
+.lang button{font:inherit;font-size:0.8rem;font-weight:600;color:var(--muted);background:var(--surface-2);border:0;padding:6px 10px;cursor:pointer;}
+.lang button[aria-pressed="true"]{background:var(--accent-soft);color:var(--accent);}
+
+.view{padding-block:20px 48px;}
+[hidden]{display:none!important;}
+
+/* ---------- MAP ---------- */
+h1{margin:0;font-weight:800;font-size:clamp(1.5rem,4.2vw,2.3rem);line-height:1.06;letter-spacing:-0.03em;text-wrap:balance;}
+.lede{margin:12px 0 0;color:var(--muted);max-width:66ch;font-size:0.98rem;} .lede b{color:var(--fg);font-weight:600;}
+.mapcard{margin-top:16px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:10px;}
+.maptools{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;justify-content:space-between;padding:4px 6px 10px;}
+.scale{display:flex;align-items:center;gap:8px;font-size:0.78rem;color:var(--muted);}
+.scale .grad{width:110px;height:8px;border-radius:999px;background:linear-gradient(90deg,var(--dead),var(--mid),var(--alive));}
+.toggles{display:flex;gap:6px;}
+.toggles button{font:inherit;font-size:0.8rem;color:var(--muted);background:var(--surface-2);border:1px solid var(--line);border-radius:8px;padding:5px 10px;cursor:pointer;}
+.toggles button[aria-pressed="true"]{color:var(--fg);border-color:var(--accent);background:var(--accent-soft);}
+.canvas-box{position:relative;width:100%;aspect-ratio:1.05/1;border-radius:12px;overflow:hidden;background:var(--bg);}
+canvas{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;}
+.ovl{position:absolute;inset:0;pointer-events:none;}
+.clab{position:absolute;transform:translate(-50%,-50%);font-size:11px;font-weight:600;color:var(--fg);opacity:0.82;text-shadow:0 1px 3px var(--bg),0 0 6px var(--bg);white-space:nowrap;}
+.pin{position:absolute;transform:translate(-50%,-50%);width:24px;height:24px;border-radius:50%;border:2px solid var(--pick);color:var(--pick);background:color-mix(in srgb,var(--pick) 18%,var(--bg));display:grid;place-items:center;font-family:var(--font-mono);font-weight:600;font-size:12px;pointer-events:auto;cursor:pointer;box-shadow:0 0 0 3px color-mix(in srgb,var(--pick) 22%,transparent);}
+.tip{position:absolute;z-index:5;pointer-events:none;background:var(--surface);border:1px solid var(--line-strong);border-radius:8px;padding:6px 9px;font-size:0.8rem;max-width:220px;box-shadow:0 6px 20px rgba(0,0,0,0.3);transform:translate(-50%,calc(-100% - 12px));}
+.tip b{display:block;font-size:0.84rem;overflow-wrap:anywhere;} .tip span{color:var(--faint);font-family:var(--font-mono);font-size:0.72rem;}
+.loading{position:absolute;inset:0;display:grid;place-items:center;color:var(--muted);font-size:0.9rem;}
+.read{margin-top:18px;background:var(--accent-soft);border:1px solid color-mix(in srgb,var(--accent) 36%,transparent);border-radius:14px;padding:16px 18px;}
+.read h2{margin:0 0 8px;font-size:1.05rem;} .read p{margin:0 0 8px;color:var(--muted);font-size:0.92rem;} .read b{color:var(--fg);}
+
+/* ---------- FINDER ---------- */
+.finder-head{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;justify-content:space-between;}
+.finder-head h1{font-size:clamp(1.4rem,3.6vw,2rem);}
+.controls{margin-top:16px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px 14px;align-items:end;}
+.ctl{display:flex;flex-direction:column;gap:5px;min-width:0;}
+.ctl label{font-size:0.74rem;text-transform:uppercase;letter-spacing:0.05em;color:var(--faint);font-weight:600;}
+.ctl input,.ctl select{font:inherit;font-size:0.9rem;background:var(--surface-2);border:1px solid var(--line);border-radius:8px;padding:8px 10px;color:var(--fg);width:100%;}
+.ctl.range{grid-column:span 1;}
+.rr{display:flex;gap:6px;align-items:center;} .rr input{width:100%;}
+.hint{font-size:0.78rem;color:var(--faint);margin-top:8px;}
+.status{margin-top:14px;font-size:0.9rem;color:var(--muted);min-height:1.2em;}
+.status.err{color:var(--bad);}
+
+.signal{margin-top:16px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--surface);}
+.signal-top{display:flex;flex-wrap:wrap;align-items:center;gap:12px;padding:16px 18px;border-bottom:1px solid var(--line);}
+.verdict{font-family:var(--font-mono);font-weight:600;font-size:0.8rem;letter-spacing:0.04em;padding:6px 12px;border-radius:999px;}
+.verdict.good{color:var(--good);background:color-mix(in srgb,var(--good) 16%,transparent);}
+.verdict.warn{color:var(--warn);background:color-mix(in srgb,var(--warn) 16%,transparent);}
+.verdict.bad{color:var(--bad);background:color-mix(in srgb,var(--bad) 16%,transparent);}
+.verdict.none{color:var(--faint);background:var(--surface-2);}
+.signal-top .headline{font-weight:600;font-size:0.98rem;}
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:1px;background:var(--line);}
+.metrics div{background:var(--surface);padding:12px 14px;}
+.metrics .k{font-family:var(--font-mono);font-size:1.15rem;font-weight:500;letter-spacing:-0.02em;}
+.metrics .l{font-size:0.76rem;color:var(--faint);margin-top:2px;}
+
+.section-h{font-size:0.78rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--muted);font-weight:600;margin:22px 0 10px;}
+.tscroll{overflow-x:auto;border:1px solid var(--line);border-radius:12px;}
+table{width:100%;border-collapse:collapse;font-size:0.86rem;min-width:560px;}
+th,td{padding:9px 11px;text-align:right;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums;white-space:nowrap;}
+th{background:var(--surface-2);font-size:0.7rem;text-transform:uppercase;letter-spacing:0.04em;color:var(--faint);font-weight:600;cursor:pointer;position:sticky;top:0;}
+td:first-child,th:first-child{text-align:left;white-space:normal;min-width:180px;}
+tbody tr:hover{background:var(--surface-2);}
+td a{color:var(--fg);text-decoration:none;} td a:hover{color:var(--accent);text-decoration:underline;}
+.words{display:flex;flex-wrap:wrap;gap:6px;}
+.words span{font-family:var(--font-mono);font-size:0.78rem;background:var(--surface-2);border:1px solid var(--line);border-radius:6px;padding:3px 9px;color:var(--muted);cursor:pointer;}
+.words span:hover{border-color:var(--accent);color:var(--accent);}
+.empty{padding:40px 20px;text-align:center;color:var(--muted);}
+.foot{margin-top:28px;font-size:0.78rem;color:var(--faint);max-width:72ch;} .foot b{color:var(--muted);}
+</style>
+</head>
+<body>
+<header class="bar">
+  <div class="wrap bar-in">
+    <div class="brand">App Store <span>Atlas</span></div>
+    <div class="tabs" role="tablist">
+      <button id="tab-map" role="tab" aria-selected="true" data-i="tab_map">Map</button>
+      <button id="tab-finder" role="tab" aria-selected="false" data-i="tab_finder">Finder</button>
+    </div>
+    <div class="lang">
+      <button id="lang-en" aria-pressed="true">EN</button>
+      <button id="lang-tr" aria-pressed="false">TR</button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MAP ============ -->
+<main id="view-map" class="view wrap" role="tabpanel">
+  <h1 data-i="map_h1"></h1>
+  <p class="lede" id="map_lede"></p>
+  <div class="mapcard">
+    <div class="maptools">
+      <div class="scale"><span data-i="graveyard"></span><div class="grad"></div><span data-i="alive"></span></div>
+      <div class="toggles">
+        <button id="t-labels" aria-pressed="true" data-i="labels"></button>
+        <button id="t-pins" aria-pressed="true" data-i="pins"></button>
+      </div>
+    </div>
+    <div class="canvas-box" id="box">
+      <canvas id="cv"></canvas><div class="ovl" id="ovl"></div>
+      <div class="loading" id="map-loading" data-i="loading"></div>
+    </div>
+  </div>
+  <div class="read">
+    <h2 data-i="read_h"></h2>
+    <p id="read_p1"></p>
+    <p id="read_p2"></p>
+  </div>
+</main>
+
+<!-- ============ FINDER ============ -->
+<main id="view-finder" class="view wrap" role="tabpanel" hidden>
+  <div class="finder-head">
+    <div>
+      <h1 data-i="find_h1"></h1>
+      <p class="lede" id="find_lede"></p>
+    </div>
+  </div>
+  <div class="controls">
+    <div class="ctl"><label data-i="f_category"></label><select id="f-cat"></select></div>
+    <div class="ctl"><label data-i="f_keyword"></label><input id="f-kw" type="search" placeholder=""></div>
+    <div class="ctl"><label data-i="f_reviews"></label><div class="rr"><input id="f-rmin" type="number" min="0" placeholder="min"><span>–</span><input id="f-rmax" type="number" min="0" placeholder="max"></div></div>
+    <div class="ctl"><label data-i="f_minrating"></label><input id="f-rating" type="number" min="0" max="5" step="0.1" placeholder="0"></div>
+    <div class="ctl"><label data-i="f_price"></label><select id="f-price"><option value="all" data-i="price_all"></option><option value="free" data-i="price_free"></option><option value="paid" data-i="price_paid"></option></select></div>
+    <div class="ctl"><label data-i="f_year"></label><input id="f-year" type="number" min="2008" max="2026" placeholder="2008"></div>
+    <div class="ctl"><label data-i="f_lang"></label><select id="f-tr"><option value="all" data-i="lang_all"></option><option value="tr" data-i="lang_tr"></option><option value="notr" data-i="lang_notr"></option></select></div>
+  </div>
+  <p class="hint" data-i="f_hint"></p>
+  <div class="status" id="f-status"></div>
+
+  <div id="f-results" hidden>
+    <div class="signal">
+      <div class="signal-top"><span class="verdict" id="sig-verdict"></span><span class="headline" id="sig-headline"></span></div>
+      <div class="metrics" id="sig-metrics"></div>
+    </div>
+    <div class="section-h" data-i="s_competitors"></div>
+    <div class="tscroll"><table id="comp-tbl"><thead></thead><tbody></tbody></table></div>
+    <div class="section-h" data-i="s_subniches"></div>
+    <div class="words" id="words"></div>
+    <div class="section-h" id="results-h"></div>
+    <div class="tscroll"><table id="res-tbl"><thead></thead><tbody></tbody></table></div>
+  </div>
+
+  <p class="foot" id="find_foot"></p>
+</main>
+
+<script>
+/* ===================== i18n ===================== */
+const T = {
+  en:{
+    tab_map:"Map", tab_finder:"Finder",
+    map_h1:"The map of the App Store: where are the gaps?",
+    map_lede:"The descriptions of <b>1,613,165 apps</b> embedded, reduced to 2D, grouped into 50 clusters. Nearby apps are similar in meaning. Colour = how <b>alive</b> a region is (share of apps that get used): red = graveyard, green = alive. <b>Yellow pins</b> mark sparse regions worth a look.",
+    graveyard:"graveyard", alive:"alive", labels:"Labels", pins:"Pins", loading:"Loading map…",
+    read_h:"The first real finding",
+    read_p1:"<b>There is no true empty lot in the App Store.</b> At 1.6M apps, every semantic corner is filled — there's almost no region that is surrounded yet genuinely empty. The 'find the gap' trick works on 146k Steam games; it mostly doesn't here. Opportunity isn't the void — it's (1) sparse edges where existing apps are weak, (2) graveyards to avoid, (3) localizing a problem you understand.",
+    read_p2:"<b>Caveat:</b> sparse ≠ demand. A pin means 'few apps here,' not 'users want this here.' Pins are hypotheses — validate before you build.",
+    find_h1:"Opportunity Finder",
+    find_lede:"Pick a category, then filter by keyword, reviews, rating, price and language to spot sub-niches with <b>demand but weak competition</b>. Everything runs in your browser.",
+    f_category:"Category", f_keyword:"Keyword", f_reviews:"Reviews (min–max)", f_minrating:"Min rating", f_price:"Price", f_year:"Updated since", f_lang:"Language",
+    price_all:"All", price_free:"Free", price_paid:"Paid", lang_all:"Any", lang_tr:"Turkish only", lang_notr:"No Turkish",
+    f_hint:"Tip: to find underserved niches, set a low max on reviews (e.g. 0–50) — that surfaces the thin, weak-competition corners.",
+    choose_cat:"Choose a category to load its data.",
+    loading_cat:"Loading {cat} ({mb} MB)…", querying:"Searching…",
+    s_competitors:"Top competitors", s_subniches:"Sub-niche words (click to search)",
+    results_h:"Results ({n} matches, showing {shown})",
+    th_app:"App", th_reviews:"Reviews", th_rating:"Rating", th_price:"Price", th_year:"Year", th_tr:"TR",
+    no_match:"No apps match these filters.",
+    v_dead:"DEAD", v_weak:"WEAK DEMAND", v_crowded:"CROWDED", v_promising:"PROMISING", v_thin:"THIN DATA",
+    m_matches:"matches", m_traction:"with ≥100 reviews", m_leader:"leader reviews", m_tr:"Turkish support", m_medrev:"median reviews",
+    h_dead:"No app here has real traction — likely no demand.",
+    h_weak:"Only a handful get used — demand looks weak.",
+    h_crowded:"Big and dominated — hard to break in.",
+    h_promising:"Some apps get used, but the field is thin — worth a closer look.",
+    h_thin:"Too few apps to read a signal.",
+    note_conc:"Top 3 apps hold {pct}% of all reviews — one or two giants dominate.",
+    note_tr:"Only {pct}% support Turkish — a localization gap.",
+    find_foot:"<b>How the signal works.</b> DEAD: no app ≥100 reviews. WEAK: 1–2 apps ≥100. CROWDED: 50+ apps and (leader >100k reviews or >3000 competitors). Otherwise PROMISING. Notes added when the top 3 hold >80% of reviews, or Turkish support is under 10%. Reviews and prices are US-storefront only — real local demand isn't in this data. Keyword search covers the app name + first 100 characters of the description. The signal is a first read; validate promising niches properly before building."
+  },
+  tr:{
+    tab_map:"Harita", tab_finder:"Fırsat Avcısı",
+    map_h1:"App Store haritası: boşluk nerede?",
+    map_lede:"<b>1.613.165 uygulamanın</b> açıklaması vektöre döküldü, 2 boyuta indirildi, 50 kümeye ayrıldı. Yakın uygulamalar anlamca benzer. Renk = bölgenin <b>canlılığı</b> (kullanılan uygulama oranı): kırmızı mezarlık, yeşil canlı. <b>Sarı pinler</b> incelenmeye değer seyrek bölgeler.",
+    graveyard:"mezarlık", alive:"canlı", labels:"Etiketler", pins:"Pinler", loading:"Harita yükleniyor…",
+    read_h:"İlk gerçek bulgu",
+    read_p1:"<b>App Store'da gerçek boş arsa yok.</b> 1,6 milyon uygulamada her anlamsal köşe dolmuş — çevresi dolu olup içi gerçekten boş bir yer neredeyse yok. 'Boşluğu bul' numarası 146 bin Steam oyununda işliyor, burada işlemiyor. Fırsat boşlukta değil: (1) mevcut uygulamaların zayıf olduğu seyrek kenarlar, (2) kaçılacak mezarlıklar, (3) bildiğin bir işi yerelleştirmek.",
+    read_p2:"<b>Uyarı:</b> seyrek olmak talep demek değil. Pin 'burada az uygulama var' der, 'kullanıcı var' demez. Pinler hipotez — yapmadan önce doğrula.",
+    find_h1:"Fırsat Avcısı",
+    find_lede:"Bir kategori seç, sonra kelime, yorum, puan, fiyat ve dile göre süz; <b>talep var ama rekabet zayıf</b> alt-nişleri yakala. Her şey tarayıcında çalışır.",
+    f_category:"Kategori", f_keyword:"Anahtar kelime", f_reviews:"Yorum (min–maks)", f_minrating:"Min puan", f_price:"Fiyat", f_year:"Şundan beri güncel", f_lang:"Dil",
+    price_all:"Hepsi", price_free:"Ücretsiz", price_paid:"Ücretli", lang_all:"Fark etmez", lang_tr:"Sadece Türkçe", lang_notr:"Türkçe yok",
+    f_hint:"İpucu: boş nişleri bulmak için yorum üst sınırını düşük tut (ör. 0–50) — zayıf rekabetli ince köşeler ortaya çıkar.",
+    choose_cat:"Verisini yüklemek için bir kategori seç.",
+    loading_cat:"{cat} yükleniyor ({mb} MB)…", querying:"Aranıyor…",
+    s_competitors:"En büyük rakipler", s_subniches:"Alt-niş kelimeleri (tıkla, ara)",
+    results_h:"Sonuçlar ({n} eşleşme, gösterilen {shown})",
+    th_app:"Uygulama", th_reviews:"Yorum", th_rating:"Puan", th_price:"Fiyat", th_year:"Yıl", th_tr:"TR",
+    no_match:"Bu filtrelere uyan uygulama yok.",
+    v_dead:"ÖLÜ", v_weak:"ZAYIF TALEP", v_crowded:"KALABALIK", v_promising:"UMUT VERİCİ", v_thin:"VERİ AZ",
+    m_matches:"eşleşme", m_traction:"≥100 yorumlu", m_leader:"lider yorum", m_tr:"Türkçe destek", m_medrev:"medyan yorum",
+    h_dead:"Burada gerçek kullanım alan uygulama yok — muhtemelen talep yok.",
+    h_weak:"Sadece birkaçı kullanılıyor — talep zayıf görünüyor.",
+    h_crowded:"Büyük ve tutulmuş — girmesi zor.",
+    h_promising:"Bazı uygulamalar kullanılıyor ama alan ince — yakından bakmaya değer.",
+    h_thin:"Sinyal okumak için uygulama çok az.",
+    note_conc:"İlk 3 uygulama tüm yorumların %{pct}'ini topluyor — bir iki dev baskın.",
+    note_tr:"Sadece %{pct} Türkçe destekliyor — yerelleştirme boşluğu.",
+    find_foot:"<b>Sinyal nasıl çalışır.</b> ÖLÜ: ≥100 yorumlu uygulama yok. ZAYIF: 1–2 uygulama ≥100. KALABALIK: 50+ uygulama ve (lider >100k yorum ya da >3000 rakip). Diğer durumlar UMUT VERİCİ. İlk 3 uygulama yorumların >%80'ini tutuyorsa ya da Türkçe destek %10 altındaysa not düşülür. Yorum ve fiyatlar yalnızca ABD mağazasından — gerçek yerel talep bu veride yok. Arama, uygulama adı + açıklamanın ilk 100 karakterini kapsar. Sinyal bir ön okumadır; umut verici nişleri yapmadan önce düzgün doğrula."
+  }
+};
+let LANG = (()=>{ try{return localStorage.getItem('atlas-lang')||'en';}catch(e){return 'en';} })();
+function t(k){ return (T[LANG]&&T[LANG][k]) || T.en[k] || k; }
+function applyLang(){
+  document.documentElement.lang=LANG;
+  document.querySelectorAll('[data-i]').forEach(el=>{ el.innerHTML=t(el.getAttribute('data-i')); });
+  document.getElementById('map_lede').innerHTML=t('map_lede');
+  document.getElementById('read_p1').innerHTML=t('read_p1');
+  document.getElementById('read_p2').innerHTML=t('read_p2');
+  document.getElementById('find_lede').innerHTML=t('find_lede');
+  document.getElementById('find_foot').innerHTML=t('find_foot');
+  document.getElementById('f-kw').placeholder = LANG==='tr'?'ör. kredi, fatura':'e.g. invoice, budget';
+  document.getElementById('lang-en').setAttribute('aria-pressed',LANG==='en');
+  document.getElementById('lang-tr').setAttribute('aria-pressed',LANG==='tr');
+  if(window._mapReady){ layout(); }
+  if(window._lastResult){ renderResult(window._lastResult); }
+  if(!CAT_LOADED && !document.getElementById('f-results').hidden===false){}
+  const st=document.getElementById('f-status'); if(st && !CAT_LOADED && st.textContent) st.textContent=t('choose_cat');
+}
+function setLang(l){ LANG=l; try{localStorage.setItem('atlas-lang',l);}catch(e){} applyLang(); }
+document.getElementById('lang-en').onclick=()=>setLang('en');
+document.getElementById('lang-tr').onclick=()=>setLang('tr');
+
+/* ===================== tabs ===================== */
+function showTab(which){
+  const map=which==='map';
+  document.getElementById('tab-map').setAttribute('aria-selected',map);
+  document.getElementById('tab-finder').setAttribute('aria-selected',!map);
+  document.getElementById('view-map').hidden=!map;
+  document.getElementById('view-finder').hidden=map;
+  if(map && window._mapReady){ resize(); }
+}
+document.getElementById('tab-map').onclick=()=>showTab('map');
+document.getElementById('tab-finder').onclick=()=>showTab('finder');
+
+/* ===================== MAP ===================== */
+const CAND=[
+  {n:1,cx:3.28,cy:-2.24,pick:true,
+   title:{en:"Localized financial calculators",tr:"Yerel finans hesaplayıcıları"},
+   apps:["Hipotecas España Simulador","Global VAT Pro","Nest Pensions","Root Mortgage"]},
+  {n:2,cx:0.01,cy:3.54,title:{en:"AI journal / thought partner",tr:"AI günlük / düşünce ortağı"},apps:["liferu - AI Journal","Ramble","Fond"]},
+  {n:3,cx:-1.87,cy:1.88,title:{en:"Reverse image search",tr:"Ters görsel arama"},apps:["FindPhoto AI","Reverse Image Search Tool"]},
+  {n:4,cx:-0.09,cy:5.24,title:{en:"Voice language-learning games",tr:"Sesli dil öğrenme oyunları"},apps:["SpeakRPG","Rhymer"]},
+  {n:5,cx:-1.32,cy:-0.16,title:{en:"Regional field guides",tr:"Bölgesel saha rehberleri"},apps:["Oregon Wildflowers","Nunavut Wildflowers"]}
+];
+const LANDMARKS=[10,40,3,32,34,16,21,49,41,28,26,4,11,23,15,0,8,35,29,20,31,14,27,2,38,18,7,9,43,42,1,36,48,17,39,19];
+let PTS=[],CL=[],clById={},proj=null,grid=null,dpr=Math.min(2,window.devicePixelRatio||1),showLabels=true,showPins=true,tip=null;
+const XMIN=-9.12,XMAX=6.21,YMIN=-8.86,YMAX=7.99;
+const box=document.getElementById('box'),cv=document.getElementById('cv'),ctx=cv.getContext('2d'),ovl=document.getElementById('ovl');
+const lerp=(a,b,t)=>a+(b-a)*t, hx=h=>[parseInt(h.slice(1,3),16),parseInt(h.slice(3,5),16),parseInt(h.slice(5,7),16)];
+const CD=hx('#d8503f'),CM=hx('#d59a2a'),CA=hx('#33b277');
+function tc(v){const k=Math.max(0,Math.min(1,v/18));let a,b,u;if(k<0.5){a=CD;b=CM;u=k/0.5;}else{a=CM;b=CA;u=(k-0.5)/0.5;}return`rgb(${Math.round(lerp(a[0],b[0],u))},${Math.round(lerp(a[1],b[1],u))},${Math.round(lerp(a[2],b[2],u))})`;}
+function setProj(){const W=box.clientWidth,H=box.clientHeight,pad=26;proj={W,H,pad,sx:x=>(x-XMIN)/(XMAX-XMIN)*(W-2*pad)+pad,sy:y=>H-((y-YMIN)/(YMAX-YMIN)*(H-2*pad)+pad)};}
+function resize(){const W=box.clientWidth,H=box.clientHeight;if(!W||!H)return;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);setProj();buildGrid();draw();layout();}
+function buildGrid(){grid={cell:10,map:new Map()};for(let i=0;i<PTS.length;i++){const p=PTS[i],gx=Math.floor(proj.sx(p[0])/10),gy=Math.floor(proj.sy(p[1])/10),k=gx+','+gy;let a=grid.map.get(k);if(!a){a=[];grid.map.set(k,a);}a.push(i);}}
+function draw(){const{W,H}=proj;ctx.clearRect(0,0,W,H);for(let i=0;i<PTS.length;i++){const p=PTS[i],c=clById[p[2]];ctx.fillStyle=tc(c?c.tract:5);ctx.globalAlpha=0.72;ctx.beginPath();ctx.arc(proj.sx(p[0]),proj.sy(p[1]),1.7,0,6.283);ctx.fill();}ctx.globalAlpha=1;}
+function layout(){ovl.innerHTML='';if(showLabels){LANDMARKS.forEach(id=>{const c=clById[id];if(!c)return;const d=document.createElement('div');d.className='clab';d.style.left=proj.sx(c.cx)+'px';d.style.top=proj.sy(c.cy)+'px';d.textContent=c.label.split(' · ')[0];ovl.appendChild(d);});}
+  if(showPins){CAND.forEach(r=>{const d=document.createElement('div');d.className='pin';d.style.left=proj.sx(r.cx)+'px';d.style.top=proj.sy(r.cy)+'px';d.textContent=r.n;d.title=r.title[LANG]||r.title.en;ovl.appendChild(d);});}}
+function showTip(sx,sy){if(!grid)return;const gx=Math.floor(sx/10),gy=Math.floor(sy/10);let best=-1,bd=1e9;for(let a=-1;a<=1;a++)for(let b=-1;b<=1;b++){const arr=grid.map.get((gx+a)+','+(gy+b));if(!arr)continue;for(const i of arr){const p=PTS[i],dx=proj.sx(p[0])-sx,dy=proj.sy(p[1])-sy,dd=dx*dx+dy*dy;if(dd<bd){bd=dd;best=i;}}}if(best<0||bd>120){if(tip){tip.remove();tip=null;}return;}const p=PTS[best],c=clById[p[2]];if(!tip){tip=document.createElement('div');tip.className='tip';box.appendChild(tip);}tip.style.left=proj.sx(p[0])+'px';tip.style.top=proj.sy(p[1])+'px';tip.innerHTML=`<b>${esc(p[3]||'—')}</b><span>${c?c.label:''} · ${p[4]} ${LANG==='tr'?'yorum':'ratings'}</span>`;}
+function esc(s){return String(s).replace(/[&<>]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[m]));}
+document.getElementById('t-labels').onclick=e=>{showLabels=!showLabels;e.target.setAttribute('aria-pressed',showLabels);layout();};
+document.getElementById('t-pins').onclick=e=>{showPins=!showPins;e.target.setAttribute('aria-pressed',showPins);layout();};
+box.addEventListener('pointermove',e=>{const r=box.getBoundingClientRect();showTip(e.clientX-r.left,e.clientY-r.top);});
+box.addEventListener('pointerleave',()=>{if(tip){tip.remove();tip=null;}});
+Promise.all([fetch('points.json').then(r=>r.json()),fetch('meta.json').then(r=>r.json())]).then(([pts,meta])=>{
+  PTS=pts;CL=meta.clusters;CL.forEach(c=>clById[c.id]=c);document.getElementById('map-loading').remove();window._mapReady=true;resize();
+  let to;window.addEventListener('resize',()=>{clearTimeout(to);to=setTimeout(resize,150);});
+}).catch(e=>{const l=document.getElementById('map-loading');if(l)l.textContent='Failed to load map data.';});
+
+/* ===================== FINDER (DuckDB-WASM) ===================== */
+let DB=null,CONN=null,CAT_LOADED=null,INDEX=null,duckdbMod=null;
+const $=id=>document.getElementById(id);
+async function initDuck(){
+  if(DB) return;
+  duckdbMod = await import('https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.29.0/+esm');
+  const bundles = duckdbMod.getJsDelivrBundles();
+  const bundle = await duckdbMod.selectBundle(bundles);
+  const wurl = URL.createObjectURL(new Blob([`importScripts("${bundle.mainWorker}");`],{type:'text/javascript'}));
+  const worker = new Worker(wurl);
+  DB = new duckdbMod.AsyncDuckDB(new duckdbMod.ConsoleLogger(), worker);
+  await DB.instantiate(bundle.mainModule, bundle.pthreadWorker);
+  URL.revokeObjectURL(wurl);
+  CONN = await DB.connect();
+}
+let CAT_NAME=null; // DuckDB içinde kayıtlı dosya adı (kategori başına benzersiz)
+async function loadCategory(file,label,mb){
+  await initDuck();
+  setStatus(t('loading_cat').replace('{cat}',label).replace('{mb}',mb));
+  // index.json'daki file zaten "data/cat/X.parquet" — tekrar önek ekleme
+  const resp = await fetch(file);
+  if(!resp.ok) throw new Error(`HTTP ${resp.status} — ${file}`);
+  const buf = new Uint8Array(await resp.arrayBuffer());
+  const name = 'cat_'+file.split('/').pop();
+  if(CAT_NAME && CAT_NAME!==name){ try{ await DB.dropFile(CAT_NAME); }catch(e){} }
+  await DB.registerFileBuffer(name, buf);
+  CAT_NAME=name; CAT_LOADED=file;
+}
+function esql(s){return "'"+String(s).replace(/'/g,"''")+"'";}
+function buildWhere(){
+  const w=["1=1"];
+  const kw=$('f-kw').value.trim().toLowerCase();
+  if(kw){ kw.split(/\s+/).forEach(word=>{ if(word) w.push("s LIKE "+esql('%'+word+'%')); }); }
+  const rmin=$('f-rmin').value, rmax=$('f-rmax').value, rt=$('f-rating').value, yr=$('f-year').value;
+  if(rmin!=='') w.push("reviews >= "+(+rmin));
+  if(rmax!=='') w.push("reviews <= "+(+rmax));
+  if(rt!=='') w.push("rating >= "+(+rt));
+  if(yr!=='') w.push("year >= "+(+yr));
+  const pr=$('f-price').value; if(pr==='free') w.push("price = 0"); else if(pr==='paid') w.push("price > 0");
+  const tr=$('f-tr').value; if(tr==='tr') w.push("tr = 1"); else if(tr==='notr') w.push("tr = 0");
+  return w.join(" AND ");
+}
+async function q(sql){ const r=await CONN.query(sql); return r.toArray().map(row=>row.toJSON()); }
+function setStatus(msg,err){const s=$('f-status');s.textContent=msg||'';s.classList.toggle('err',!!err);}
+
+// Kategori yükleme ve sorgular tek sırada çalışır: yazarken kategori değişirse
+// gecikmeli sorgu, silinmiş eski dosyayı sorgulamaya çalışmasın.
+let CHAIN=Promise.resolve();
+function serial(fn){ const p=CHAIN.then(fn); CHAIN=p.catch(()=>{}); return p; }
+function runSearch(){ return serial(runSearchNow); }
+async function runSearchNow(){
+  if(!CAT_LOADED){ setStatus(t('choose_cat')); return; }
+  setStatus(t('querying'));
+  const where=buildWhere();
+  try{
+    // sum(INTEGER) DuckDB'de HUGEINT döner → Arrow'da Decimal olur, JS'te sayı değildir. Hepsini BIGINT/DOUBLE'a çevir.
+    const F=`'${CAT_NAME}'`;
+    const agg=(await q(`SELECT count(*)::BIGINT n, count(*) FILTER (WHERE reviews>=100)::BIGINT tr100, coalesce(max(reviews),0)::BIGINT maxr, coalesce(sum(reviews),0)::BIGINT totrev, count(*) FILTER (WHERE tr=1)::BIGINT trc, median(reviews) FILTER (WHERE reviews>0)::DOUBLE medrev FROM ${F} WHERE ${where}`))[0];
+    const comp=await q(`SELECT id,name,reviews,rating,price,year,tr FROM ${F} WHERE ${where} ORDER BY reviews DESC LIMIT 15`);
+    const top3=await q(`SELECT coalesce(sum(reviews),0)::BIGINT s FROM (SELECT reviews FROM ${F} WHERE ${where} ORDER BY reviews DESC LIMIT 3)`);
+    const rows=await q(`SELECT id,name,reviews,rating,price,year,tr FROM ${F} WHERE ${where} ORDER BY reviews DESC LIMIT 500`);
+    const words=await q(`SELECT word, count(*)::BIGINT c FROM (SELECT unnest(string_split_regex(lower(name),'[^a-z0-9ğüşıöç]+')) word FROM ${F} WHERE ${where}) WHERE length(word)>=3 GROUP BY word ORDER BY c DESC LIMIT 60`);
+    const res={agg:num(agg),comp,rows,words,top3:num(top3[0]).s||0};
+    window._lastResult=res; renderResult(res);
+    setStatus('');
+  }catch(err){ setStatus('DuckDB error: '+err, true); console.error(err); }
+}
+function num(o){const r={};for(const k in o){const v=o[k];r[k]=(typeof v==='bigint')?Number(v):v;}return r;}
+
+function verdict(a,top3){
+  const n=a.n|0, tr100=a.tr100|0, maxr=a.maxr|0;
+  if(n<8) return['thin','v_thin','h_thin'];
+  if(tr100===0) return['bad','v_dead','h_dead'];
+  if(tr100<=2) return['bad','v_weak','h_weak'];
+  if(n>=50 && (maxr>100000 || n>3000)) return['warn','v_crowded','h_crowded'];
+  return['good','v_promising','h_promising'];
+}
+function renderResult(res){
+  $('f-results').hidden=false;
+  const a=res.agg, [vc,vk,hk]=verdict(a,res.top3);
+  const V=$('sig-verdict'); V.className='verdict '+vc; V.textContent=t(vk);
+  const notes=[];
+  const totrev=a.totrev||0;
+  if(totrev>0 && res.top3/totrev>0.8 && (a.n|0)>5) notes.push(t('note_conc').replace('{pct}',Math.round(res.top3/totrev*100)));
+  const trpct=a.n? Math.round((a.trc||0)/a.n*100):0;
+  if((a.n|0)>=20 && trpct<10) notes.push(t('note_tr').replace('{pct}',trpct));
+  $('sig-headline').textContent = t(hk)+(notes.length?' '+notes.join(' '):'');
+  const M=$('sig-metrics');
+  M.innerHTML=[
+    [fmt(a.n), t('m_matches')],
+    [fmt(a.tr100||0), t('m_traction')],
+    [fmt(a.maxr||0), t('m_leader')],
+    [(a.medrev!=null?fmt(Math.round(a.medrev)):'0'), t('m_medrev')],
+    [(LANG==='tr'?'%'+trpct:trpct+'%'), t('m_tr')]
+  ].map(m=>`<div><div class="k">${m[0]}</div><div class="l">${m[1]}</div></div>`).join('');
+  // competitors + results tables
+  const head=`<tr><th data-i="th_app">${t('th_app')}</th><th>${t('th_reviews')}</th><th>${t('th_rating')}</th><th>${t('th_price')}</th><th>${t('th_year')}</th><th>${t('th_tr')}</th></tr>`;
+  const rowHtml=r=>`<tr><td><a href="https://apps.apple.com/app/id${r.id}" target="_blank" rel="noopener">${esc(r.name||'')}</a></td><td>${fmt(r.reviews||0)}</td><td>${r.rating?(+r.rating).toFixed(2):'–'}</td><td>${r.price>0?'$'+(+r.price).toFixed(2):'Free'}</td><td>${r.year||'–'}</td><td>${r.tr?'✓':''}</td></tr>`;
+  $('comp-tbl').querySelector('thead').innerHTML=head;
+  $('comp-tbl').querySelector('tbody').innerHTML=res.comp.map(num).map(rowHtml).join('')||`<tr><td colspan="6" class="empty">${t('no_match')}</td></tr>`;
+  $('results-h').textContent=t('results_h').replace('{n}',fmt(a.n)).replace('{shown}',Math.min(a.n,500));
+  $('res-tbl').querySelector('thead').innerHTML=head;
+  $('res-tbl').querySelector('tbody').innerHTML=res.rows.map(num).map(rowHtml).join('')||`<tr><td colspan="6" class="empty">${t('no_match')}</td></tr>`;
+  const W=$('words'); W.innerHTML=res.words.map(num).map(w=>`<span data-w="${esc(w.word)}">${esc(w.word)} ${w.c}</span>`).join('');
+  W.querySelectorAll('span').forEach(s=>s.onclick=()=>{$('f-kw').value=s.getAttribute('data-w');runSearch();});
+}
+function fmt(n){return (n||0).toLocaleString(LANG==='tr'?'tr-TR':'en-US');}
+
+// wire filters
+['f-kw','f-rmin','f-rmax','f-rating','f-price','f-year','f-tr'].forEach(id=>{
+  const el=$(id); const ev=el.tagName==='SELECT'?'change':'input';
+  let to; el.addEventListener(ev,()=>{clearTimeout(to);to=setTimeout(runSearch,250);});
+});
+$('f-cat').addEventListener('change',async e=>{
+  const opt=e.target.selectedOptions[0]; if(!opt||!opt.value){return;}
+  try{ await serial(()=>loadCategory(opt.value, opt.dataset.label, opt.dataset.mb)); await runSearch(); }
+  catch(err){ setStatus('Load error: '+err,true); console.error(err); }
+});
+// load index.json
+fetch('index.json').then(r=>r.json()).then(idx=>{
+  INDEX=idx; const sel=$('f-cat');
+  sel.innerHTML=`<option value="">— ${LANG==='tr'?'kategori seç':'select category'} —</option>`;
+  (idx.categories||idx).slice().sort((a,b)=>b.count-a.count).forEach(c=>{
+    const o=document.createElement('option'); o.value=c.file; o.dataset.label=c.genre; o.dataset.mb=((c.bytes||0)/1048576).toFixed(1);
+    o.textContent=`${c.genre} (${(c.count||0).toLocaleString()})`; sel.appendChild(o);
+  });
+  setStatus(t('choose_cat'));
+}).catch(e=>setStatus('index.json not found — place data files in the same folder.',true));
+
+applyLang();
+</script>
+</body>
+</html>

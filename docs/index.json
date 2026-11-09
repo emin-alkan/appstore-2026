@@ -1,0 +1,268 @@
+{
+ "total": 1613165,
+ "category_count": 26,
+ "generated_at": "2026-11-09",
+ "source": "App Store (US) lookup, Kasım 2026",
+ "categories": [
+  {
+   "genre": "Games",
+   "file": "data/cat/Games.parquet",
+   "count": 190021,
+   "traction": 18.27,
+   "graveyard": 32.39,
+   "tr_pct": 9.05,
+   "median_rating": 4.504,
+   "bytes": 10168275
+  },
+  {
+   "genre": "Education",
+   "file": "data/cat/Education.parquet",
+   "count": 172864,
+   "traction": 4.25,
+   "graveyard": 56.13,
+   "tr_pct": 6.58,
+   "median_rating": 4.672,
+   "bytes": 9170629
+  },
+  {
+   "genre": "Utilities",
+   "file": "data/cat/Utilities.parquet",
+   "count": 145227,
+   "traction": 5.6,
+   "graveyard": 56.79,
+   "tr_pct": 8.86,
+   "median_rating": 4.419,
+   "bytes": 8085948
+  },
+  {
+   "genre": "Business",
+   "file": "data/cat/Business.parquet",
+   "count": 139115,
+   "traction": 2.74,
+   "graveyard": 66.28,
+   "tr_pct": 6.93,
+   "median_rating": 4.734,
+   "bytes": 6893423
+  },
+  {
+   "genre": "Lifestyle",
+   "file": "data/cat/Lifestyle.parquet",
+   "count": 127940,
+   "traction": 4.32,
+   "graveyard": 58.74,
+   "tr_pct": 6.06,
+   "median_rating": 4.845,
+   "bytes": 7137063
+  },
+  {
+   "genre": "Health & Fitness",
+   "file": "data/cat/Health_Fitness.parquet",
+   "count": 119938,
+   "traction": 5.53,
+   "graveyard": 55.75,
+   "tr_pct": 8.44,
+   "median_rating": 4.909,
+   "bytes": 5649798
+  },
+  {
+   "genre": "Productivity",
+   "file": "data/cat/Productivity.parquet",
+   "count": 92525,
+   "traction": 4.82,
+   "graveyard": 59.3,
+   "tr_pct": 8.2,
+   "median_rating": 4.667,
+   "bytes": 4843982
+  },
+  {
+   "genre": "Food & Drink",
+   "file": "data/cat/Food_Drink.parquet",
+   "count": 88035,
+   "traction": 3.51,
+   "graveyard": 66.98,
+   "tr_pct": 6.58,
+   "median_rating": 4.958,
+   "bytes": 3805755
+  },
+  {
+   "genre": "Finance",
+   "file": "data/cat/Finance.parquet",
+   "count": 67246,
+   "traction": 11.8,
+   "graveyard": 49.56,
+   "tr_pct": 4.26,
+   "median_rating": 4.712,
+   "bytes": 3366230
+  },
+  {
+   "genre": "Entertainment",
+   "file": "data/cat/Entertainment.parquet",
+   "count": 62749,
+   "traction": 8.64,
+   "graveyard": 46.19,
+   "tr_pct": 6.52,
+   "median_rating": 4.5,
+   "bytes": 3570639
+  },
+  {
+   "genre": "Shopping",
+   "file": "data/cat/Shopping.parquet",
+   "count": 57785,
+   "traction": 6.14,
+   "graveyard": 61.69,
+   "tr_pct": 9.19,
+   "median_rating": 4.867,
+   "bytes": 3183154
+  },
+  {
+   "genre": "Travel",
+   "file": "data/cat/Travel.parquet",
+   "count": 54094,
+   "traction": 5.14,
+   "graveyard": 60.62,
+   "tr_pct": 8.09,
+   "median_rating": 4.704,
+   "bytes": 2781421
+  },
+  {
+   "genre": "Sports",
+   "file": "data/cat/Sports.parquet",
+   "count": 52943,
+   "traction": 4.59,
+   "graveyard": 59.33,
+   "tr_pct": 5.98,
+   "median_rating": 4.8,
+   "bytes": 2544135
+  },
+  {
+   "genre": "Music",
+   "file": "data/cat/Music.parquet",
+   "count": 35935,
+   "traction": 8.28,
+   "graveyard": 39.01,
+   "tr_pct": 6.99,
+   "median_rating": 4.669,
+   "bytes": 1884466
+  },
+  {
+   "genre": "Photo & Video",
+   "file": "data/cat/Photo_Video.parquet",
+   "count": 35881,
+   "traction": 11.61,
+   "graveyard": 39.43,
+   "tr_pct": 14.95,
+   "median_rating": 4.5,
+   "bytes": 1909610
+  },
+  {
+   "genre": "Social Networking",
+   "file": "data/cat/Social_Networking.parquet",
+   "count": 33749,
+   "traction": 5.61,
+   "graveyard": 54.48,
+   "tr_pct": 10.39,
+   "median_rating": 4.8,
+   "bytes": 1981368
+  },
+  {
+   "genre": "Medical",
+   "file": "data/cat/Medical.parquet",
+   "count": 29316,
+   "traction": 5.94,
+   "graveyard": 53.97,
+   "tr_pct": 4.25,
+   "median_rating": 4.667,
+   "bytes": 1605914
+  },
+  {
+   "genre": "Reference",
+   "file": "data/cat/Reference.parquet",
+   "count": 26422,
+   "traction": 9.08,
+   "graveyard": 41.1,
+   "tr_pct": 7.43,
+   "median_rating": 4.705,
+   "bytes": 1574190
+  },
+  {
+   "genre": "News",
+   "file": "data/cat/News.parquet",
+   "count": 20142,
+   "traction": 9.59,
+   "graveyard": 53.41,
+   "tr_pct": 5.25,
+   "median_rating": 4.587,
+   "bytes": 1147206
+  },
+  {
+   "genre": "Navigation",
+   "file": "data/cat/Navigation.parquet",
+   "count": 18946,
+   "traction": 5.81,
+   "graveyard": 57.47,
+   "tr_pct": 9.99,
+   "median_rating": 4.522,
+   "bytes": 1055681
+  },
+  {
+   "genre": "Book",
+   "file": "data/cat/Book.parquet",
+   "count": 16714,
+   "traction": 8.55,
+   "graveyard": 43.54,
+   "tr_pct": 5.94,
+   "median_rating": 4.693,
+   "bytes": 1104953
+  },
+  {
+   "genre": "Graphics & Design",
+   "file": "data/cat/Graphics_Design.parquet",
+   "count": 9655,
+   "traction": 13.64,
+   "graveyard": 37.89,
+   "tr_pct": 15.67,
+   "median_rating": 4.545,
+   "bytes": 539370
+  },
+  {
+   "genre": "Weather",
+   "file": "data/cat/Weather.parquet",
+   "count": 6291,
+   "traction": 14.59,
+   "graveyard": 39.02,
+   "tr_pct": 8.97,
+   "median_rating": 4.664,
+   "bytes": 371058
+  },
+  {
+   "genre": "Developer Tools",
+   "file": "data/cat/Developer_Tools.parquet",
+   "count": 3758,
+   "traction": 4.34,
+   "graveyard": 51.81,
+   "tr_pct": 7.21,
+   "median_rating": 4.688,
+   "bytes": 214644
+  },
+  {
+   "genre": "Stickers",
+   "file": "data/cat/Stickers.parquet",
+   "count": 3322,
+   "traction": 3.34,
+   "graveyard": 34.14,
+   "tr_pct": 1.23,
+   "median_rating": 4.649,
+   "bytes": 169720
+  },
+  {
+   "genre": "Magazines & Newspapers",
+   "file": "data/cat/Magazines_Newspapers.parquet",
+   "count": 2552,
+   "traction": 4.08,
+   "graveyard": 61.68,
+   "tr_pct": 8.07,
+   "median_rating": 4.75,
+   "bytes": 171436
+  }
+ ]
+}

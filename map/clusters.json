@@ -1,0 +1,1606 @@
+{
+ "k": 50,
+ "points": 1611058,
+ "clusters": [
+  {
+   "cluster": 0,
+   "size": 41572,
+   "terms": [
+    "health",
+    "medical",
+    "care",
+    "healthcare",
+    "patient"
+   ],
+   "centroid": [
+    3.008,
+    1.251
+   ],
+   "median_rating": 4.714,
+   "graveyard_pct": 61.78,
+   "traction_pct": 4.19,
+   "ai_pct": 6.79,
+   "paid_pct": 1.48,
+   "top_genres": {
+    "Medical": 41.1,
+    "Health & Fitness": 25.6,
+    "Business": 6.8
+   },
+   "top_apps": [
+    "Walgreens",
+    "CVS Health",
+    "Kaiser Permanente",
+    "UnitedHealthcare",
+    "Teladoc Health"
+   ]
+  },
+  {
+   "cluster": 1,
+   "size": 32286,
+   "terms": [
+    "weather",
+    "map",
+    "location",
+    "gps",
+    "forecast"
+   ],
+   "centroid": [
+    -1.762,
+    -0.272
+   ],
+   "median_rating": 4.643,
+   "graveyard_pct": 51.43,
+   "traction_pct": 7.1,
+   "ai_pct": 6.75,
+   "paid_pct": 6.92,
+   "top_genres": {
+    "Weather": 14.1,
+    "Education": 13.7,
+    "Travel": 13.3
+   },
+   "top_apps": [
+    "The Weather Channel - Radar",
+    "WeatherBug: Weather Forecast",
+    "Weather",
+    "AccuWeather: Weather Forecast",
+    "PictureThis - Plant Identifier"
+   ]
+  },
+  {
+   "cluster": 2,
+   "size": 34979,
+   "terms": [
+    "music",
+    "sound",
+    "audio",
+    "sounds",
+    "song"
+   ],
+   "centroid": [
+    -1.794,
+    5.076
+   ],
+   "median_rating": 4.536,
+   "graveyard_pct": 37.8,
+   "traction_pct": 10.34,
+   "ai_pct": 7.98,
+   "paid_pct": 11.66,
+   "top_genres": {
+    "Music": 49.6,
+    "Utilities": 11.7,
+    "Entertainment": 7.9
+   },
+   "top_apps": [
+    "Spotify: Music and Podcasts",
+    "Audible: Audiobooks & Podcasts",
+    "Apple Music",
+    "SoundCloud: Discover New Music",
+    "Apple Podcasts"
+   ]
+  },
+  {
+   "cluster": 3,
+   "size": 44059,
+   "terms": [
+    "game",
+    "enemies",
+    "battle",
+    "play",
+    "fight"
+   ],
+   "centroid": [
+    -4.915,
+    0.864
+   ],
+   "median_rating": 4.478,
+   "graveyard_pct": 32.29,
+   "traction_pct": 17.68,
+   "ai_pct": 4.04,
+   "paid_pct": 4.85,
+   "top_genres": {
+    "Games": 85.8,
+    "Entertainment": 3.3,
+    "Sports": 2.8
+   },
+   "top_apps": [
+    "Clash Royale",
+    "Royal Match",
+    "Sniper 3D: Gun Shooting Games",
+    "Brawl Stars",
+    "Aquapark.io"
+   ]
+  },
+  {
+   "cluster": 4,
+   "size": 15946,
+   "terms": [
+    "food",
+    "order",
+    "ordering",
+    "delivery",
+    "prices"
+   ],
+   "centroid": [
+    2.35,
+    -6.106
+   ],
+   "median_rating": 5.0,
+   "graveyard_pct": 70.71,
+   "traction_pct": 1.67,
+   "ai_pct": 0.37,
+   "paid_pct": 0.17,
+   "top_genres": {
+    "Food & Drink": 95.5,
+    "Education": 0.9,
+    "Shopping": 0.9
+   },
+   "top_apps": [
+    "Dunkin'",
+    "Subway®",
+    "Casey's",
+    "MyDISH Account",
+    "Applebee’s"
+   ]
+  },
+  {
+   "cluster": 5,
+   "size": 43744,
+   "terms": [
+    "exam",
+    "questions",
+    "learning",
+    "study",
+    "students"
+   ],
+   "centroid": [
+    1.798,
+    4.174
+   ],
+   "median_rating": 4.716,
+   "graveyard_pct": 66.97,
+   "traction_pct": 3.09,
+   "ai_pct": 6.93,
+   "paid_pct": 3.87,
+   "top_genres": {
+    "Education": 79.9,
+    "Business": 2.6,
+    "Utilities": 2.5
+   },
+   "top_apps": [
+    "ClassDojo",
+    "Canvas by Instructure",
+    "Gauth: AI Study Companion",
+    "Impulse - Brain Training",
+    "TestFlight"
+   ]
+  },
+  {
+   "cluster": 6,
+   "size": 35230,
+   "terms": [
+    "お店からメッセージが届くので",
+    "いつでも最新の情報がご確認いただけます",
+    "本アプリを利用して以下のことが行えます",
+    "このアプリでは",
+    "最新情報をチェック"
+   ],
+   "centroid": [
+    1.98,
+    -2.862
+   ],
+   "median_rating": 4.75,
+   "graveyard_pct": 74.0,
+   "traction_pct": 3.43,
+   "ai_pct": 2.42,
+   "paid_pct": 0.51,
+   "top_genres": {
+    "Shopping": 31.6,
+    "Lifestyle": 16.5,
+    "Business": 15.7
+   },
+   "top_apps": [
+    "Walmart: Shopping & Savings",
+    "Amazon Shopping",
+    "Fetch: Earn Rewards Every Day",
+    "My Verizon",
+    "Wayfair – Shop All Things Home"
+   ]
+  },
+  {
+   "cluster": 7,
+   "size": 28357,
+   "terms": [
+    "shop",
+    "products",
+    "shopping",
+    "fashion",
+    "items"
+   ],
+   "centroid": [
+    0.859,
+    -3.138
+   ],
+   "median_rating": 4.875,
+   "graveyard_pct": 57.56,
+   "traction_pct": 7.12,
+   "ai_pct": 2.51,
+   "paid_pct": 0.34,
+   "top_genres": {
+    "Shopping": 64.2,
+    "Lifestyle": 9.4,
+    "Business": 9.1
+   },
+   "top_apps": [
+    "Etsy: Shop from Real People",
+    "Shop: Track, Pay, Discover",
+    "eBay online shopping & selling",
+    "OfferUp Buy & Sell Marketplace",
+    "SHEIN - Shopping Online"
+   ]
+  },
+  {
+   "cluster": 8,
+   "size": 34243,
+   "terms": [
+    "fitness",
+    "workout",
+    "training",
+    "workouts",
+    "body"
+   ],
+   "centroid": [
+    4.274,
+    2.48
+   ],
+   "median_rating": 4.857,
+   "graveyard_pct": 51.8,
+   "traction_pct": 6.57,
+   "ai_pct": 14.06,
+   "paid_pct": 1.92,
+   "top_genres": {
+    "Health & Fitness": 74.7,
+    "Sports": 9.3,
+    "Lifestyle": 3.6
+   },
+   "top_apps": [
+    "WeightWatchers Program",
+    "BetterMe Well-Being Coach",
+    "Google Health (Fitbit)",
+    "Workout for Women: Home & Gym",
+    "Nike Run Club: Running Coach"
+   ]
+  },
+  {
+   "cluster": 9,
+   "size": 33063,
+   "terms": [
+    "news",
+    "people",
+    "stories",
+    "social",
+    "breaking"
+   ],
+   "centroid": [
+    0.494,
+    2.004
+   ],
+   "median_rating": 4.636,
+   "graveyard_pct": 49.2,
+   "traction_pct": 8.97,
+   "ai_pct": 6.99,
+   "paid_pct": 0.95,
+   "top_genres": {
+    "News": 28.4,
+    "Social Networking": 21.9,
+    "Lifestyle": 10.8
+   },
+   "top_apps": [
+    "Facebook",
+    "Messenger",
+    "X",
+    "Mail",
+    "Reddit"
+   ]
+  },
+  {
+   "cluster": 10,
+   "size": 39209,
+   "terms": [
+    "game",
+    "adventure",
+    "play",
+    "escape",
+    "world"
+   ],
+   "centroid": [
+    -4.421,
+    1.663
+   ],
+   "median_rating": 4.473,
+   "graveyard_pct": 27.43,
+   "traction_pct": 20.93,
+   "ai_pct": 3.2,
+   "paid_pct": 7.59,
+   "top_genres": {
+    "Games": 75.2,
+    "Entertainment": 7.5,
+    "Education": 5.3
+   },
+   "top_apps": [
+    "Target: Shop. Style. Save.",
+    "DuckDuckGo, optional Duck.ai",
+    "Township",
+    "Homescapes",
+    "Hole.io - Original Hole Game"
+   ]
+  },
+  {
+   "cluster": 11,
+   "size": 51076,
+   "terms": [
+    "management",
+    "mobile",
+    "job",
+    "work",
+    "employees"
+   ],
+   "centroid": [
+    1.802,
+    -0.14
+   ],
+   "median_rating": 4.667,
+   "graveyard_pct": 72.64,
+   "traction_pct": 2.15,
+   "ai_pct": 4.29,
+   "paid_pct": 0.35,
+   "top_genres": {
+    "Business": 40.5,
+    "Productivity": 17.1,
+    "Utilities": 12.5
+   },
+   "top_apps": [
+    "ADP Mobile Solutions",
+    "Indeed Job Search",
+    "Microsoft Teams",
+    "T-Life",
+    "Progressive"
+   ]
+  },
+  {
+   "cluster": 12,
+   "size": 33345,
+   "terms": [
+    "church",
+    "bible",
+    "messages",
+    "stay",
+    "version"
+   ],
+   "centroid": [
+    3.009,
+    6.874
+   ],
+   "median_rating": 5.0,
+   "graveyard_pct": 39.26,
+   "traction_pct": 4.64,
+   "ai_pct": 4.3,
+   "paid_pct": 1.4,
+   "top_genres": {
+    "Lifestyle": 37.5,
+    "Education": 29.7,
+    "Reference": 10.3
+   },
+   "top_apps": [
+    "Bible",
+    "Bible Word Puzzle - Word Games",
+    "K.J.V. Holy Bible",
+    "Bible - Daily Bible Verse KJV",
+    "#Bible - Verse of the Day"
+   ]
+  },
+  {
+   "cluster": 13,
+   "size": 29832,
+   "terms": [
+    "quran",
+    "prayer",
+    "islamic",
+    "على",
+    "arabic"
+   ],
+   "centroid": [
+    1.439,
+    6.28
+   ],
+   "median_rating": 4.824,
+   "graveyard_pct": 50.06,
+   "traction_pct": 5.21,
+   "ai_pct": 5.21,
+   "paid_pct": 2.21,
+   "top_genres": {
+    "Lifestyle": 20.1,
+    "Education": 19.6,
+    "Book": 14.3
+   },
+   "top_apps": [
+    "Muslim Pro: Quran & Athan",
+    "Haqibat Elmomen",
+    "Quran Majeed – القران الكريم",
+    "iPersia Calendar تقویم ارز",
+    "كلمات كراش : لعبة تسلية و تحدي"
+   ]
+  },
+  {
+   "cluster": 14,
+   "size": 17624,
+   "terms": [
+    "voice",
+    "text",
+    "speech",
+    "audio",
+    "speak"
+   ],
+   "centroid": [
+    -0.501,
+    4.571
+   ],
+   "median_rating": 4.588,
+   "graveyard_pct": 46.58,
+   "traction_pct": 7.38,
+   "ai_pct": 37.74,
+   "paid_pct": 5.38,
+   "top_genres": {
+    "Education": 26.4,
+    "Productivity": 22.0,
+    "Utilities": 17.2
+   },
+   "top_apps": [
+    "ChatGPT",
+    "GIF Keyboard",
+    "Quizlet: More than Flashcards",
+    "Voice Memos",
+    "Speechify – Text to Speech PDF"
+   ]
+  },
+  {
+   "cluster": 15,
+   "size": 34285,
+   "terms": [
+    "event",
+    "events",
+    "conference",
+    "attendees",
+    "information"
+   ],
+   "centroid": [
+    1.796,
+    1.3
+   ],
+   "median_rating": 4.913,
+   "graveyard_pct": 69.7,
+   "traction_pct": 2.17,
+   "ai_pct": 3.47,
+   "paid_pct": 0.26,
+   "top_genres": {
+    "Business": 32.9,
+    "Social Networking": 10.9,
+    "Education": 8.6
+   },
+   "top_apps": [
+    "Workday",
+    "Eventbrite",
+    "StubHub: Event Tickets",
+    "Amazon A to Z",
+    "Clubhouse"
+   ]
+  },
+  {
+   "cluster": 16,
+   "size": 21628,
+   "terms": [
+    "game",
+    "car",
+    "racing",
+    "cars",
+    "driving"
+   ],
+   "centroid": [
+    -5.078,
+    -0.26
+   ],
+   "median_rating": 4.429,
+   "graveyard_pct": 36.11,
+   "traction_pct": 14.24,
+   "ai_pct": 6.63,
+   "paid_pct": 3.41,
+   "top_genres": {
+    "Games": 64.4,
+    "Sports": 18.0,
+    "Utilities": 4.2
+   },
+   "top_apps": [
+    "Subway Surfers",
+    "FanDuel Sportsbook & Casino",
+    "ESPN Fantasy Sports & More",
+    "NBA 2K Mobile Basketball Game",
+    "Asphalt Legends - Racing Game"
+   ]
+  },
+  {
+   "cluster": 17,
+   "size": 35562,
+   "terms": [
+    "control",
+    "video",
+    "camera",
+    "vpn",
+    "device"
+   ],
+   "centroid": [
+    -0.704,
+    1.169
+   ],
+   "median_rating": 4.25,
+   "graveyard_pct": 47.19,
+   "traction_pct": 8.63,
+   "ai_pct": 4.67,
+   "paid_pct": 3.86,
+   "top_genres": {
+    "Utilities": 44.8,
+    "Productivity": 11.0,
+    "Business": 8.8
+   },
+   "top_apps": [
+    "Google Drive",
+    "Google Chrome",
+    "VPN - Super Unlimited Proxy",
+    "QR Reader for iPhone",
+    "Private Photo Vault - Pic Safe"
+   ]
+  },
+  {
+   "cluster": 18,
+   "size": 35915,
+   "terms": [
+    "travel",
+    "trip",
+    "map",
+    "route",
+    "places"
+   ],
+   "centroid": [
+    -1.649,
+    -1.367
+   ],
+   "median_rating": 4.688,
+   "graveyard_pct": 57.91,
+   "traction_pct": 5.52,
+   "ai_pct": 5.88,
+   "paid_pct": 2.15,
+   "top_genres": {
+    "Travel": 57.4,
+    "Navigation": 13.0,
+    "Lifestyle": 5.0
+   },
+   "top_apps": [
+    "United Airlines",
+    "Google Maps",
+    "Southwest Airlines: Travel App",
+    "Fly Delta",
+    "Expedia: Hotels, Flights, Cars"
+   ]
+  },
+  {
+   "cluster": 19,
+   "size": 35632,
+   "terms": [
+    "photos",
+    "pdf",
+    "photo",
+    "camera",
+    "files"
+   ],
+   "centroid": [
+    -1.199,
+    2.298
+   ],
+   "median_rating": 4.542,
+   "graveyard_pct": 46.52,
+   "traction_pct": 8.99,
+   "ai_pct": 14.39,
+   "paid_pct": 5.25,
+   "top_genres": {
+    "Photo & Video": 26.1,
+    "Utilities": 25.3,
+    "Productivity": 16.6
+   },
+   "top_apps": [
+    "Instagram",
+    "Snapchat",
+    "HP",
+    "Zoom Workplace",
+    "CamScanner - PDF Scanner App"
+   ]
+  },
+  {
+   "cluster": 20,
+   "size": 42400,
+   "terms": [
+    "photo",
+    "photos",
+    "image",
+    "create",
+    "art"
+   ],
+   "centroid": [
+    -2.347,
+    2.413
+   ],
+   "median_rating": 4.5,
+   "graveyard_pct": 38.11,
+   "traction_pct": 12.46,
+   "ai_pct": 28.62,
+   "paid_pct": 4.36,
+   "top_genres": {
+    "Photo & Video": 34.3,
+    "Graphics & Design": 15.5,
+    "Entertainment": 10.5
+   },
+   "top_apps": [
+    "InShot - Video Editor",
+    "PicCollage: Magic Photo Editor",
+    "Color by Number：Coloring Games",
+    "FaceApp: Perfect Face Editor",
+    "Avatar World ®"
+   ]
+  },
+  {
+   "cluster": 21,
+   "size": 28870,
+   "terms": [
+    "banking",
+    "mobile",
+    "accounts",
+    "account",
+    "bank"
+   ],
+   "centroid": [
+    3.153,
+    -0.982
+   ],
+   "median_rating": 4.677,
+   "graveyard_pct": 41.18,
+   "traction_pct": 19.91,
+   "ai_pct": 2.72,
+   "paid_pct": 0.27,
+   "top_genres": {
+    "Finance": 66.2,
+    "Business": 8.2,
+    "Utilities": 7.2
+   },
+   "top_apps": [
+    "Capital One Mobile",
+    "Wells Fargo Mobile®",
+    "Chase Mobile®: Bank & Invest",
+    "Roku Remote (Official)",
+    "Discover Mobile"
+   ]
+  },
+  {
+   "cluster": 22,
+   "size": 30239,
+   "terms": [
+    "pet",
+    "stickers",
+    "kids",
+    "fun",
+    "dog"
+   ],
+   "centroid": [
+    -3.988,
+    3.377
+   ],
+   "median_rating": 4.458,
+   "graveyard_pct": 39.0,
+   "traction_pct": 10.82,
+   "ai_pct": 6.25,
+   "paid_pct": 9.26,
+   "top_genres": {
+    "Education": 21.5,
+    "Games": 21.0,
+    "Lifestyle": 12.2
+   },
+   "top_apps": [
+    "Happy Color® – Coloring Games",
+    "Chewy - Pet Care & Pharmacy",
+    "Bluey: Let's Play!",
+    "Sandbox - Pixel Art Coloring",
+    "My Talking Tom 2"
+   ]
+  },
+  {
+   "cluster": 23,
+   "size": 40080,
+   "terms": [
+    "property",
+    "management",
+    "estate",
+    "mobile",
+    "maintenance"
+   ],
+   "centroid": [
+    0.803,
+    -0.742
+   ],
+   "median_rating": 4.743,
+   "graveyard_pct": 69.67,
+   "traction_pct": 2.35,
+   "ai_pct": 4.71,
+   "paid_pct": 0.39,
+   "top_genres": {
+    "Business": 33.5,
+    "Utilities": 16.8,
+    "Lifestyle": 16.0
+   },
+   "top_apps": [
+    "Zillow Real Estate & Rentals",
+    "Redfin: Buy, Sell & Rent Homes",
+    "Trulia Real Estate & Rentals",
+    "UPS",
+    "Realtor.com Real Estate & Rent"
+   ]
+  },
+  {
+   "cluster": 24,
+   "size": 28837,
+   "terms": [
+    "golf",
+    "football",
+    "match",
+    "league",
+    "players"
+   ],
+   "centroid": [
+    -4.007,
+    -0.625
+   ],
+   "median_rating": 4.748,
+   "graveyard_pct": 52.82,
+   "traction_pct": 6.34,
+   "ai_pct": 7.48,
+   "paid_pct": 2.42,
+   "top_genres": {
+    "Sports": 69.0,
+    "Games": 10.2,
+    "Health & Fitness": 3.4
+   },
+   "top_apps": [
+    "ESPN: Live Sports & Scores",
+    "Marco Polo - Video Messenger",
+    "Golf Clash - Golfing Simulator",
+    "theScore: Sports News & Scores",
+    "CBS Sports: Live Scores & News"
+   ]
+  },
+  {
+   "cluster": 25,
+   "size": 21017,
+   "terms": [
+    "club",
+    "members",
+    "events",
+    "reservations",
+    "member"
+   ],
+   "centroid": [
+    4.44,
+    0.586
+   ],
+   "median_rating": 4.769,
+   "graveyard_pct": 66.84,
+   "traction_pct": 3.41,
+   "ai_pct": 3.83,
+   "paid_pct": 1.07,
+   "top_genres": {
+    "Sports": 36.2,
+    "Lifestyle": 19.8,
+    "Health & Fitness": 15.9
+   },
+   "top_apps": [
+    "Sam's Club Shopping & Delivery",
+    "BJs Wholesale Club",
+    "Chess.com - Play and Learn",
+    "Noom Weight Loss, Food Tracker",
+    "Publix"
+   ]
+  },
+  {
+   "cluster": 26,
+   "size": 24692,
+   "terms": [
+    "order",
+    "coffee",
+    "rewards",
+    "store",
+    "ordering"
+   ],
+   "centroid": [
+    1.489,
+    -4.297
+   ],
+   "median_rating": 4.928,
+   "graveyard_pct": 61.35,
+   "traction_pct": 4.41,
+   "ai_pct": 2.72,
+   "paid_pct": 0.57,
+   "top_genres": {
+    "Food & Drink": 63.5,
+    "Shopping": 14.8,
+    "Business": 6.8
+   },
+   "top_apps": [
+    "Starbucks",
+    "Crumbl",
+    "Instacart: Groceries & Food",
+    "Lowe's Home Improvement",
+    "Chipotle"
+   ]
+  },
+  {
+   "cluster": 27,
+   "size": 42386,
+   "terms": [
+    "words",
+    "language",
+    "english",
+    "learn",
+    "learning"
+   ],
+   "centroid": [
+    0.349,
+    5.318
+   ],
+   "median_rating": 4.622,
+   "graveyard_pct": 50.02,
+   "traction_pct": 5.25,
+   "ai_pct": 11.71,
+   "paid_pct": 6.6,
+   "top_genres": {
+    "Education": 70.5,
+    "Reference": 7.6,
+    "Utilities": 5.0
+   },
+   "top_apps": [
+    "Duolingo: Learn Languages",
+    "Babbel - Language Learning",
+    "Lingokids: Games & Shows",
+    "iTranslate Translator",
+    "Merriam-Webster Dictionary"
+   ]
+  },
+  {
+   "cluster": 28,
+   "size": 41476,
+   "terms": [
+    "order",
+    "food",
+    "menu",
+    "pizza",
+    "ordering"
+   ],
+   "centroid": [
+    1.695,
+    -5.103
+   ],
+   "median_rating": 4.874,
+   "graveyard_pct": 65.27,
+   "traction_pct": 4.99,
+   "ai_pct": 1.3,
+   "paid_pct": 0.42,
+   "top_genres": {
+    "Food & Drink": 84.4,
+    "Games": 5.3,
+    "Shopping": 3.3
+   },
+   "top_apps": [
+    "DoorDash: Food, Grocery, More",
+    "Uber Eats: Food & Groceries",
+    "McDonald's",
+    "OpenTable",
+    "Domino's Pizza USA"
+   ]
+  },
+  {
+   "cluster": 29,
+   "size": 30057,
+   "terms": [
+    "sleep",
+    "daily",
+    "habits",
+    "day",
+    "health"
+   ],
+   "centroid": [
+    3.013,
+    2.809
+   ],
+   "median_rating": 4.833,
+   "graveyard_pct": 49.02,
+   "traction_pct": 6.65,
+   "ai_pct": 12.3,
+   "paid_pct": 2.87,
+   "top_genres": {
+    "Health & Fitness": 51.3,
+    "Lifestyle": 13.7,
+    "Productivity": 10.3
+   },
+   "top_apps": [
+    "Flo Cycle & Period Tracker",
+    "Calm",
+    "Headspace: Sleep & Meditation",
+    "I am - Daily Affirmations",
+    "Insight Timer: Meditate, Sleep"
+   ]
+  },
+  {
+   "cluster": 30,
+   "size": 31436,
+   "terms": [
+    "school",
+    "district",
+    "student",
+    "parents",
+    "event"
+   ],
+   "centroid": [
+    2.941,
+    4.518
+   ],
+   "median_rating": 4.333,
+   "graveyard_pct": 63.98,
+   "traction_pct": 1.65,
+   "ai_pct": 1.84,
+   "paid_pct": 0.36,
+   "top_genres": {
+    "Education": 74.5,
+    "Lifestyle": 4.3,
+    "Business": 3.8
+   },
+   "top_apps": [
+    "Remind: School Communication",
+    "PowerSchool Mobile",
+    "Blackboard",
+    "WICShopper",
+    "Google Family Link"
+   ]
+  },
+  {
+   "cluster": 31,
+   "size": 36881,
+   "terms": [
+    "notes",
+    "books",
+    "text",
+    "reading",
+    "write"
+   ],
+   "centroid": [
+    0.173,
+    3.442
+   ],
+   "median_rating": 4.667,
+   "graveyard_pct": 48.16,
+   "traction_pct": 7.53,
+   "ai_pct": 40.44,
+   "paid_pct": 2.59,
+   "top_genres": {
+    "Productivity": 19.3,
+    "Lifestyle": 15.9,
+    "Education": 15.0
+   },
+   "top_apps": [
+    "Amazon Alexa",
+    "Amazon Kindle: Reading App",
+    "Google",
+    "Libby, the library app",
+    "Google Docs"
+   ]
+  },
+  {
+   "cluster": 32,
+   "size": 27645,
+   "terms": [
+    "game",
+    "play",
+    "games",
+    "card",
+    "cards"
+   ],
+   "centroid": [
+    -6.211,
+    0.752
+   ],
+   "median_rating": 4.563,
+   "graveyard_pct": 35.92,
+   "traction_pct": 17.49,
+   "ai_pct": 8.32,
+   "paid_pct": 3.89,
+   "top_genres": {
+    "Games": 71.8,
+    "Entertainment": 10.0,
+    "Utilities": 4.8
+   },
+   "top_apps": [
+    "Roblox",
+    "8 Ball Pool™",
+    "MONOPOLY GO!",
+    "Discord - Talk, Play, Hang Out",
+    "Paper.io 2"
+   ]
+  },
+  {
+   "cluster": 33,
+   "size": 30233,
+   "terms": [
+    "sales",
+    "products",
+    "customers",
+    "orders",
+    "delivery"
+   ],
+   "centroid": [
+    0.973,
+    -1.997
+   ],
+   "median_rating": 4.811,
+   "graveyard_pct": 68.53,
+   "traction_pct": 2.53,
+   "ai_pct": 3.79,
+   "paid_pct": 0.36,
+   "top_genres": {
+    "Business": 35.3,
+    "Shopping": 19.0,
+    "Utilities": 10.6
+   },
+   "top_apps": [
+    "Mercari: Buying & Selling App",
+    "USPS Mobile®",
+    "MyWalmart",
+    "LTK: Shop Trusted Recs",
+    "Salesforce"
+   ]
+  },
+  {
+   "cluster": 34,
+   "size": 25177,
+   "terms": [
+    "game",
+    "word",
+    "puzzle",
+    "puzzles",
+    "words"
+   ],
+   "centroid": [
+    -5.546,
+    2.862
+   ],
+   "median_rating": 4.64,
+   "graveyard_pct": 42.06,
+   "traction_pct": 12.19,
+   "ai_pct": 3.2,
+   "paid_pct": 5.82,
+   "top_genres": {
+    "Games": 65.4,
+    "Education": 25.2,
+    "Entertainment": 3.1
+   },
+   "top_apps": [
+    "Sudoku.com - Number Games",
+    "Brain Test: Tricky Puzzles",
+    "Word Connect ¤",
+    "Wordscapes - Word Game",
+    "Jigsaw Puzzles - Puzzle Games"
+   ]
+  },
+  {
+   "cluster": 35,
+   "size": 38715,
+   "terms": [
+    "classes",
+    "fitness",
+    "class",
+    "gym",
+    "studio"
+   ],
+   "centroid": [
+    5.125,
+    2.515
+   ],
+   "median_rating": 5.0,
+   "graveyard_pct": 65.35,
+   "traction_pct": 2.87,
+   "ai_pct": 2.42,
+   "paid_pct": 0.28,
+   "top_genres": {
+    "Health & Fitness": 84.1,
+    "Sports": 6.6,
+    "Education": 2.3
+   },
+   "top_apps": [
+    "Nike: Engineered for Athletes",
+    "Peloton: Fitness & Workouts",
+    "Planet Fitness",
+    "lululemon",
+    "Orangetheory Fitness"
+   ]
+  },
+  {
+   "cluster": 36,
+   "size": 41423,
+   "terms": [
+    "car",
+    "taxi",
+    "vehicle",
+    "driver",
+    "drivers"
+   ],
+   "centroid": [
+    -0.751,
+    -2.249
+   ],
+   "median_rating": 4.665,
+   "graveyard_pct": 62.52,
+   "traction_pct": 4.44,
+   "ai_pct": 3.17,
+   "paid_pct": 0.67,
+   "top_genres": {
+    "Travel": 34.9,
+    "Business": 18.3,
+    "Utilities": 11.7
+   },
+   "top_apps": [
+    "Lyft",
+    "Uber - Rides, Eats, Hotels",
+    "GEICO Mobile - Car Insurance",
+    "Vrbo: Vacation Rentals",
+    "Waze Navigation & Live Traffic"
+   ]
+  },
+  {
+   "cluster": 37,
+   "size": 32084,
+   "terms": [
+    "charging",
+    "gps",
+    "vehicle",
+    "fleet",
+    "tracking"
+   ],
+   "centroid": [
+    -0.562,
+    -1.103
+   ],
+   "median_rating": 4.56,
+   "graveyard_pct": 65.35,
+   "traction_pct": 3.43,
+   "ai_pct": 2.72,
+   "paid_pct": 1.06,
+   "top_genres": {
+    "Utilities": 23.4,
+    "Business": 19.1,
+    "Travel": 13.5
+   },
+   "top_apps": [
+    "Ticketmaster－Buy, Sell Tickets",
+    "Hilton Honors: Book Hotels",
+    "Life360: Family Safety & GPS",
+    "Marriott Bonvoy: Book Hotels",
+    "Hotels.com: Book Hotel Deals"
+   ]
+  },
+  {
+   "cluster": 38,
+   "size": 23390,
+   "terms": [
+    "radio",
+    "music",
+    "listen",
+    "station",
+    "stations"
+   ],
+   "centroid": [
+    -2.006,
+    6.114
+   ],
+   "median_rating": 4.832,
+   "graveyard_pct": 46.5,
+   "traction_pct": 5.16,
+   "ai_pct": 1.22,
+   "paid_pct": 0.96,
+   "top_genres": {
+    "Music": 56.4,
+    "Entertainment": 25.1,
+    "News": 4.8
+   },
+   "top_apps": [
+    "Pandora: Personalized Music",
+    "Shazam: Find Music & Concerts",
+    "Amazon Music: Songs & Podcasts",
+    "SiriusXM: Music, Sports & News",
+    "TuneIn Radio: Music & Sports"
+   ]
+  },
+  {
+   "cluster": 39,
+   "size": 34049,
+   "terms": [
+    "control",
+    "bluetooth",
+    "devices",
+    "smart",
+    "device"
+   ],
+   "centroid": [
+    -0.257,
+    0.07
+   ],
+   "median_rating": 4.135,
+   "graveyard_pct": 58.62,
+   "traction_pct": 4.34,
+   "ai_pct": 3.04,
+   "paid_pct": 1.74,
+   "top_genres": {
+    "Utilities": 48.7,
+    "Lifestyle": 14.7,
+    "Business": 11.0
+   },
+   "top_apps": [
+    "Nest",
+    "myQ Garage & Access Control",
+    "Ring - Always Home",
+    "Google Home",
+    "Allstate® Mobile"
+   ]
+  },
+  {
+   "cluster": 40,
+   "size": 47001,
+   "terms": [
+    "game",
+    "puzzle",
+    "play",
+    "levels",
+    "fun"
+   ],
+   "centroid": [
+    -5.828,
+    1.73
+   ],
+   "median_rating": 4.62,
+   "graveyard_pct": 38.34,
+   "traction_pct": 14.76,
+   "ai_pct": 2.92,
+   "paid_pct": 3.28,
+   "top_genres": {
+    "Games": 88.3,
+    "Entertainment": 4.6,
+    "Education": 2.2
+   },
+   "top_apps": [
+    "Candy Crush Saga",
+    "Block Blast！",
+    "Toon Blast",
+    "Vita Mahjong",
+    "Gardenscapes"
+   ]
+  },
+  {
+   "cluster": 41,
+   "size": 32595,
+   "terms": [
+    "business",
+    "card",
+    "payment",
+    "para",
+    "pos"
+   ],
+   "centroid": [
+    2.125,
+    -1.436
+   ],
+   "median_rating": 4.625,
+   "graveyard_pct": 66.12,
+   "traction_pct": 3.85,
+   "ai_pct": 3.84,
+   "paid_pct": 0.49,
+   "top_genres": {
+    "Business": 29.5,
+    "Finance": 28.8,
+    "Utilities": 10.8
+   },
+   "top_apps": [
+    "Venmo",
+    "PayPal - Pay, Send, Save",
+    "Amex",
+    "Remitly: Send money & transfer",
+    "Klarna: Smarter everyday money"
+   ]
+  },
+  {
+   "cluster": 42,
+   "size": 23524,
+   "terms": [
+    "calculator",
+    "calculations",
+    "calculate",
+    "species",
+    "reality"
+   ],
+   "centroid": [
+    -2.364,
+    0.941
+   ],
+   "median_rating": 4.581,
+   "graveyard_pct": 48.02,
+   "traction_pct": 6.02,
+   "ai_pct": 12.83,
+   "paid_pct": 8.24,
+   "top_genres": {
+    "Utilities": 26.2,
+    "Education": 14.1,
+    "Lifestyle": 7.9
+   },
+   "top_apps": [
+    "GOAT – Sneakers & Apparel",
+    "Calculator₊",
+    "Anthropologie",
+    "Calculator‰",
+    "Calculator - Pad Edition"
+   ]
+  },
+  {
+   "cluster": 43,
+   "size": 40544,
+   "terms": [
+    "calls",
+    "connect",
+    "mobile",
+    "emergency",
+    "phone"
+   ],
+   "centroid": [
+    0.722,
+    0.64
+   ],
+   "median_rating": 4.522,
+   "graveyard_pct": 60.66,
+   "traction_pct": 4.21,
+   "ai_pct": 4.69,
+   "paid_pct": 1.03,
+   "top_genres": {
+    "Utilities": 23.1,
+    "Business": 21.1,
+    "Productivity": 11.8
+   },
+   "top_apps": [
+    "WhatsApp",
+    "TikTok - Videos, Shop & LIVE",
+    "Yahoo Mail: Your Email & Inbox",
+    "Duo Mobile",
+    "Nextdoor: Neighborhood Network"
+   ]
+  },
+  {
+   "cluster": 44,
+   "size": 16973,
+   "terms": [
+    "food",
+    "meal",
+    "recipes",
+    "meals",
+    "recipe"
+   ],
+   "centroid": [
+    2.968,
+    -4.775
+   ],
+   "median_rating": 4.846,
+   "graveyard_pct": 52.67,
+   "traction_pct": 5.57,
+   "ai_pct": 30.83,
+   "paid_pct": 1.8,
+   "top_genres": {
+    "Food & Drink": 44.6,
+    "Health & Fitness": 40.2,
+    "Lifestyle": 3.9
+   },
+   "top_apps": [
+    "MyFitnessPal: Calorie Counter",
+    "Lose It! – Calorie Counter",
+    "Carb Manager — Keto Diet App",
+    "NYT Cooking: Quick Tasty Meals",
+    "Tasty: Recipes, Cooking Videos"
+   ]
+  },
+  {
+   "cluster": 45,
+   "size": 16853,
+   "terms": [
+    "appointments",
+    "appointment",
+    "booking",
+    "book",
+    "hair"
+   ],
+   "centroid": [
+    -0.369,
+    -4.039
+   ],
+   "median_rating": 4.77,
+   "graveyard_pct": 58.43,
+   "traction_pct": 6.74,
+   "ai_pct": 13.4,
+   "paid_pct": 0.49,
+   "top_genres": {
+    "Lifestyle": 53.6,
+    "Games": 12.7,
+    "Business": 7.6
+   },
+   "top_apps": [
+    "Ulta Beauty: Makeup & Skincare",
+    "Bath & Body Works | B&BW",
+    "Booksy for Customers",
+    "Project Makeover",
+    "Great Clips Online Check-in"
+   ]
+  },
+  {
+   "cluster": 46,
+   "size": 24676,
+   "terms": [
+    "video",
+    "videos",
+    "movies",
+    "watch",
+    "content"
+   ],
+   "centroid": [
+    -1.642,
+    3.652
+   ],
+   "median_rating": 4.5,
+   "graveyard_pct": 44.33,
+   "traction_pct": 10.38,
+   "ai_pct": 9.45,
+   "paid_pct": 3.16,
+   "top_genres": {
+    "Entertainment": 43.0,
+    "Photo & Video": 16.9,
+    "Utilities": 10.0
+   },
+   "top_apps": [
+    "YouTube",
+    "Netflix",
+    "HBO Max: Stream Movies & TV",
+    "Peacock TV: Stream TV & Movies",
+    "Canva AI Photo & Video Editor"
+   ]
+  },
+  {
+   "cluster": 47,
+   "size": 8378,
+   "terms": [
+    "test",
+    "parking",
+    "questions",
+    "practice",
+    "driving"
+   ],
+   "centroid": [
+    -2.343,
+    -2.679
+   ],
+   "median_rating": 4.7,
+   "graveyard_pct": 51.87,
+   "traction_pct": 8.39,
+   "ai_pct": 7.88,
+   "paid_pct": 2.97,
+   "top_genres": {
+    "Education": 48.0,
+    "Navigation": 8.8,
+    "Utilities": 7.2
+   },
+   "top_apps": [
+    "ParkMobile: Park. Pay. Go.",
+    "PayByPhone Parking",
+    "Ink Inc. - Tattoo Drawing",
+    "SpotHero: #1 Rated Parking App",
+    "ParkNYC Powered by Flowbird"
+   ]
+  },
+  {
+   "cluster": 48,
+   "size": 35901,
+   "terms": [
+    "day",
+    "calendar",
+    "clock",
+    "tasks",
+    "days"
+   ],
+   "centroid": [
+    1.749,
+    2.667
+   ],
+   "median_rating": 4.75,
+   "graveyard_pct": 52.99,
+   "traction_pct": 5.71,
+   "ai_pct": 7.85,
+   "paid_pct": 4.61,
+   "top_genres": {
+    "Productivity": 33.1,
+    "Lifestyle": 16.1,
+    "Utilities": 15.7
+   },
+   "top_apps": [
+    "Microsoft Outlook",
+    "Calendar",
+    "Motivation - Daily quotes",
+    "My Love - Relationship Counter",
+    "Ancestry: Family History & DNA"
+   ]
+  },
+  {
+   "cluster": 49,
+   "size": 35939,
+   "terms": [
+    "financial",
+    "money",
+    "expenses",
+    "spending",
+    "income"
+   ],
+   "centroid": [
+    3.266,
+    -2.029
+   ],
+   "median_rating": 4.75,
+   "graveyard_pct": 55.65,
+   "traction_pct": 6.1,
+   "ai_pct": 12.35,
+   "paid_pct": 1.91,
+   "top_genres": {
+    "Finance": 70.8,
+    "Utilities": 6.1,
+    "Business": 6.1
+   },
+   "top_apps": [
+    "Cash App",
+    "Intuit Credit Karma",
+    "Apple Wallet",
+    "Robinhood: Trading & Investing",
+    "Fidelity Investments"
+   ]
+  }
+ ]
+}

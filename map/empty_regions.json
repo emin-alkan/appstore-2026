@@ -1,0 +1,2558 @@
+{
+ "grid": 200,
+ "ring_radius_cells": 6,
+ "criteria": "halkanın ≥%75'i yoğun (≥ dolu hücre medyanı 47.0) ve hücre yoğunluğu < halka × 0.5",
+ "caveat": "UMAP yoğunluğu korumaz; bölgeler aday hipotezdir, edge_apps ile elle doğrulanmalı",
+ "regions": [
+  {
+   "center": [
+    1.844,
+    3.99
+   ],
+   "cells": 17,
+   "area": 0.066,
+   "apps_inside": 646,
+   "inside_density": 38.0,
+   "ring_density": 119.47,
+   "contrast": 3.06,
+   "dip_ratio": 0.371,
+   "enclosure": 0.831,
+   "nearest_clusters": [
+    {
+     "cluster": 5,
+     "terms": [
+      "exam",
+      "questions",
+      "learning",
+      "study",
+      "students"
+     ],
+     "distance": 0.19
+    },
+    {
+     "cluster": 30,
+     "terms": [
+      "school",
+      "district",
+      "student",
+      "parents",
+      "event"
+     ],
+     "distance": 1.217
+    },
+    {
+     "cluster": 48,
+     "terms": [
+      "day",
+      "calendar",
+      "clock",
+      "tasks",
+      "days"
+     ],
+     "distance": 1.326
+    },
+    {
+     "cluster": 29,
+     "terms": [
+      "sleep",
+      "daily",
+      "habits",
+      "day",
+      "health"
+     ],
+     "distance": 1.661
+    }
+   ],
+   "edge_apps": [
+    {
+     "trackName": "Ek Dersim",
+     "genre": "Education",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Property Law Made Simple",
+     "genre": "Education",
+     "userRatingCount": 27
+    },
+    {
+     "trackName": "注册会计师备考大全-注会考试学习平台软件",
+     "genre": "Education",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "MTEIC",
+     "genre": "Education",
+     "userRatingCount": 9
+    },
+    {
+     "trackName": "InnoTest Inst Penitenciarias",
+     "genre": "Education",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "AEMT Study Guide",
+     "genre": "Education",
+     "userRatingCount": 6
+    },
+    {
+     "trackName": "Damda - 설문앱",
+     "genre": "Lifestyle",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "サクッと介護福祉士1問1答【サクトレ】",
+     "genre": "Education",
+     "userRatingCount": 0
+    }
+   ]
+  },
+  {
+   "center": [
+    1.665,
+    -5.458
+   ],
+   "cells": 14,
+   "area": 0.0544,
+   "apps_inside": 400,
+   "inside_density": 28.57,
+   "ring_density": 106.25,
+   "contrast": 3.59,
+   "dip_ratio": 0.328,
+   "enclosure": 0.809,
+   "nearest_clusters": [
+    {
+     "cluster": 28,
+     "terms": [
+      "order",
+      "food",
+      "menu",
+      "pizza",
+      "ordering"
+     ],
+     "distance": 0.356
+    },
+    {
+     "cluster": 4,
+     "terms": [
+      "food",
+      "order",
+      "ordering",
+      "delivery",
+      "prices"
+     ],
+     "distance": 0.943
+    },
+    {
+     "cluster": 26,
+     "terms": [
+      "order",
+      "coffee",
+      "rewards",
+      "store",
+      "ordering"
+     ],
+     "distance": 1.174
+    },
+    {
+     "cluster": 44,
+     "terms": [
+      "food",
+      "meal",
+      "recipes",
+      "meals",
+      "recipe"
+     ],
+     "distance": 1.471
+    }
+   ],
+   "edge_apps": [
+    {
+     "trackName": "Secygo",
+     "genre": "Food & Drink",
+     "userRatingCount": 1
+    },
+    {
+     "trackName": "Pizza KISS",
+     "genre": "Food & Drink",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "San Royani Lieferservice",
+     "genre": "Food & Drink",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Vitco Foodservice",
+     "genre": "Shopping",
+     "userRatingCount": 1
+    },
+    {
+     "trackName": "Best Kebab & Pizza Wrexham",
+     "genre": "Food & Drink",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Amaans Restaurant & Takeaway",
+     "genre": "Food & Drink",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Gizmo's Eats",
+     "genre": "Food & Drink",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Mario's Real Charcoal",
+     "genre": "Food & Drink",
+     "userRatingCount": 0
+    }
+   ]
+  },
+  {
+   "center": [
+    0.517,
+    5.196
+   ],
+   "cells": 16,
+   "area": 0.0621,
+   "apps_inside": 752,
+   "inside_density": 47.0,
+   "ring_density": 148.93,
+   "contrast": 3.1,
+   "dip_ratio": 0.392,
+   "enclosure": 0.925,
+   "nearest_clusters": [
+    {
+     "cluster": 27,
+     "terms": [
+      "words",
+      "language",
+      "english",
+      "learn",
+      "learning"
+     ],
+     "distance": 0.208
+    },
+    {
+     "cluster": 14,
+     "terms": [
+      "voice",
+      "text",
+      "speech",
+      "audio",
+      "speak"
+     ],
+     "distance": 1.195
+    },
+    {
+     "cluster": 13,
+     "terms": [
+      "quran",
+      "prayer",
+      "islamic",
+      "على",
+      "arabic"
+     ],
+     "distance": 1.423
+    },
+    {
+     "cluster": 5,
+     "terms": [
+      "exam",
+      "questions",
+      "learning",
+      "study",
+      "students"
+     ],
+     "distance": 1.639
+    }
+   ],
+   "edge_apps": [
+    {
+     "trackName": "Joe Journal",
+     "genre": "Lifestyle",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "新东方乐词—考研四六级背单词软件",
+     "genre": "Education",
+     "userRatingCount": 140
+    },
+    {
+     "trackName": "汉王输入法",
+     "genre": "Utilities",
+     "userRatingCount": 1
+    },
+    {
+     "trackName": "漢カク",
+     "genre": "Education",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "MojiPon: Typing for Kids",
+     "genre": "Education",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "中文书法字典大全",
+     "genre": "Utilities",
+     "userRatingCount": 1
+    },
+    {
+     "trackName": "冀教版（三年级起点）小学英语点读学习机",
+     "genre": "Reference",
+     "userRatingCount": 5
+    },
+    {
+     "trackName": "Vocabulary for IELTS, TOEFL",
+     "genre": "Reference",
+     "userRatingCount": 0
+    }
+   ]
+  },
+  {
+   "center": [
+    -1.87,
+    1.879
+   ],
+   "cells": 11,
+   "area": 0.0427,
+   "apps_inside": 367,
+   "inside_density": 33.36,
+   "ring_density": 103.43,
+   "contrast": 3.01,
+   "dip_ratio": 0.418,
+   "enclosure": 0.931,
+   "nearest_clusters": [
+    {
+     "cluster": 20,
+     "terms": [
+      "photo",
+      "photos",
+      "image",
+      "create",
+      "art"
+     ],
+     "distance": 0.716
+    },
+    {
+     "cluster": 19,
+     "terms": [
+      "photos",
+      "pdf",
+      "photo",
+      "camera",
+      "files"
+     ],
+     "distance": 0.791
+    },
+    {
+     "cluster": 42,
+     "terms": [
+      "calculator",
+      "calculations",
+      "calculate",
+      "species",
+      "reality"
+     ],
+     "distance": 1.06
+    },
+    {
+     "cluster": 17,
+     "terms": [
+      "control",
+      "video",
+      "camera",
+      "vpn",
+      "device"
+     ],
+     "distance": 1.365
+    }
+   ],
+   "edge_apps": [
+    {
+     "trackName": "FindPhoto AI",
+     "genre": "Photo & Video",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "i3DGSLKG",
+     "genre": "Graphics & Design",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "拍照识图-智能慧眼识别图片",
+     "genre": "Utilities",
+     "userRatingCount": 18
+    },
+    {
+     "trackName": "Reverse Image Search Tool App",
+     "genre": "Productivity",
+     "userRatingCount": 51
+    },
+    {
+     "trackName": "iScenery : Kusanagi Collection Vol.1",
+     "genre": "Reference",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "SafetyCamAI: Reverse Image",
+     "genre": "Utilities",
+     "userRatingCount": 2
+    },
+    {
+     "trackName": "UNILUX",
+     "genre": "Lifestyle",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "As I See It",
+     "genre": "Education",
+     "userRatingCount": 0
+    }
+   ]
+  },
+  {
+   "center": [
+    1.645,
+    1.356
+   ],
+   "cells": 12,
+   "area": 0.0466,
+   "apps_inside": 525,
+   "inside_density": 43.75,
+   "ring_density": 117.27,
+   "contrast": 2.62,
+   "dip_ratio": 0.436,
+   "enclosure": 0.932,
+   "nearest_clusters": [
+    {
+     "cluster": 15,
+     "terms": [
+      "event",
+      "events",
+      "conference",
+      "attendees",
+      "information"
+     ],
+     "distance": 0.161
+    },
+    {
+     "cluster": 43,
+     "terms": [
+      "calls",
+      "connect",
+      "mobile",
+      "emergency",
+      "phone"
+     ],
+     "distance": 1.168
+    },
+    {
+     "cluster": 48,
+     "terms": [
+      "day",
+      "calendar",
+      "clock",
+      "tasks",
+      "days"
+     ],
+     "distance": 1.315
+    },
+    {
+     "cluster": 9,
+     "terms": [
+      "news",
+      "people",
+      "stories",
+      "social",
+      "breaking"
+     ],
+     "distance": 1.321
+    }
+   ],
+   "edge_apps": [
+    {
+     "trackName": "CSI Europe 2026",
+     "genre": "Business",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "GCPC 2024",
+     "genre": "Business",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Livelo",
+     "genre": "Business",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "mr.dj",
+     "genre": "Lifestyle",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "LiveNote",
+     "genre": "Medical",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Connection Events",
+     "genre": "Productivity",
+     "userRatingCount": 1
+    },
+    {
+     "trackName": "Vegas Life",
+     "genre": "Utilities",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Cikava: Business Organizer",
+     "genre": "Productivity",
+     "userRatingCount": 0
+    }
+   ]
+  },
+  {
+   "center": [
+    -1.326,
+    1.93
+   ],
+   "cells": 10,
+   "area": 0.0388,
+   "apps_inside": 347,
+   "inside_density": 34.7,
+   "ring_density": 108.2,
+   "contrast": 3.03,
+   "dip_ratio": 0.413,
+   "enclosure": 0.821,
+   "nearest_clusters": [
+    {
+     "cluster": 19,
+     "terms": [
+      "photos",
+      "pdf",
+      "photo",
+      "camera",
+      "files"
+     ],
+     "distance": 0.39
+    },
+    {
+     "cluster": 17,
+     "terms": [
+      "control",
+      "video",
+      "camera",
+      "vpn",
+      "device"
+     ],
+     "distance": 0.983
+    },
+    {
+     "cluster": 20,
+     "terms": [
+      "photo",
+      "photos",
+      "image",
+      "create",
+      "art"
+     ],
+     "distance": 1.129
+    },
+    {
+     "cluster": 42,
+     "terms": [
+      "calculator",
+      "calculations",
+      "calculate",
+      "species",
+      "reality"
+     ],
+     "distance": 1.433
+    }
+   ],
+   "edge_apps": [
+    {
+     "trackName": "Say Cheeze!",
+     "genre": "Photo & Video",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "SceneCast Remote: TV Hub",
+     "genre": "Utilities",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Media Organizer CuratedGallery",
+     "genre": "Utilities",
+     "userRatingCount": 3
+    },
+    {
+     "trackName": "Camera Cluster for iPhone",
+     "genre": "Photo & Video",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "폰트폰트 - 폰트검색, 폰트찾기, 글씨체찾기, 서체찾기",
+     "genre": "Productivity",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Carbon · Car Collection",
+     "genre": "Lifestyle",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Dead Drop: Item Caching",
+     "genre": "Navigation",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Desktop for Instagram",
+     "genre": "Utilities",
+     "userRatingCount": 0
+    }
+   ]
+  },
+  {
+   "center": [
+    -1.167,
+    2.409
+   ],
+   "cells": 9,
+   "area": 0.035,
+   "apps_inside": 285,
+   "inside_density": 31.67,
+   "ring_density": 108.4,
+   "contrast": 3.32,
+   "dip_ratio": 0.414,
+   "enclosure": 0.913,
+   "nearest_clusters": [
+    {
+     "cluster": 19,
+     "terms": [
+      "photos",
+      "pdf",
+      "photo",
+      "camera",
+      "files"
+     ],
+     "distance": 0.116
+    },
+    {
+     "cluster": 20,
+     "terms": [
+      "photo",
+      "photos",
+      "image",
+      "create",
+      "art"
+     ],
+     "distance": 1.18
+    },
+    {
+     "cluster": 17,
+     "terms": [
+      "control",
+      "video",
+      "camera",
+      "vpn",
+      "device"
+     ],
+     "distance": 1.324
+    },
+    {
+     "cluster": 46,
+     "terms": [
+      "video",
+      "videos",
+      "movies",
+      "watch",
+      "content"
+     ],
+     "distance": 1.33
+    }
+   ],
+   "edge_apps": [
+    {
+     "trackName": "Text on Top Vision",
+     "genre": "Utilities",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Great Prints Now",
+     "genre": "Lifestyle",
+     "userRatingCount": 1532
+    },
+    {
+     "trackName": "Peek for Reddit",
+     "genre": "News",
+     "userRatingCount": 3
+    },
+    {
+     "trackName": "Vimtag",
+     "genre": "Photo & Video",
+     "userRatingCount": 391
+    },
+    {
+     "trackName": "Kodak Printer Dock",
+     "genre": "Photo & Video",
+     "userRatingCount": 154
+    },
+    {
+     "trackName": "BatchOCR",
+     "genre": "Productivity",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "FlickMe Chat",
+     "genre": "Social Networking",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Print2Size",
+     "genre": "Utilities",
+     "userRatingCount": 0
+    }
+   ]
+  },
+  {
+   "center": [
+    -0.349,
+    0.923
+   ],
+   "cells": 12,
+   "area": 0.0466,
+   "apps_inside": 452,
+   "inside_density": 37.67,
+   "ring_density": 95.55,
+   "contrast": 2.47,
+   "dip_ratio": 0.454,
+   "enclosure": 0.841,
+   "nearest_clusters": [
+    {
+     "cluster": 17,
+     "terms": [
+      "control",
+      "video",
+      "camera",
+      "vpn",
+      "device"
+     ],
+     "distance": 0.432
+    },
+    {
+     "cluster": 39,
+     "terms": [
+      "control",
+      "bluetooth",
+      "devices",
+      "smart",
+      "device"
+     ],
+     "distance": 0.858
+    },
+    {
+     "cluster": 43,
+     "terms": [
+      "calls",
+      "connect",
+      "mobile",
+      "emergency",
+      "phone"
+     ],
+     "distance": 1.108
+    },
+    {
+     "cluster": 9,
+     "terms": [
+      "news",
+      "people",
+      "stories",
+      "social",
+      "breaking"
+     ],
+     "distance": 1.371
+    }
+   ],
+   "edge_apps": [
+    {
+     "trackName": "Campaign Codex: 5e DM Tools",
+     "genre": "Reference",
+     "userRatingCount": 2
+    },
+    {
+     "trackName": "OPCOM Care2",
+     "genre": "Utilities",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "ScreenLogic Config",
+     "genre": "Lifestyle",
+     "userRatingCount": 113
+    },
+    {
+     "trackName": "TouchPad",
+     "genre": "Productivity",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "iPTR4D",
+     "genre": "Travel",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "DeutschlandGPT",
+     "genre": "Productivity",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "S Touch",
+     "genre": "Education",
+     "userRatingCount": 1
+    },
+    {
+     "trackName": "NOJOR GHOST",
+     "genre": "Utilities",
+     "userRatingCount": 0
+    }
+   ]
+  },
+  {
+   "center": [
+    0.012,
+    3.538
+   ],
+   "cells": 11,
+   "area": 0.0427,
+   "apps_inside": 392,
+   "inside_density": 35.64,
+   "ring_density": 97.44,
+   "contrast": 2.66,
+   "dip_ratio": 0.437,
+   "enclosure": 0.944,
+   "nearest_clusters": [
+    {
+     "cluster": 31,
+     "terms": [
+      "notes",
+      "books",
+      "text",
+      "reading",
+      "write"
+     ],
+     "distance": 0.188
+    },
+    {
+     "cluster": 14,
+     "terms": [
+      "voice",
+      "text",
+      "speech",
+      "audio",
+      "speak"
+     ],
+     "distance": 1.153
+    },
+    {
+     "cluster": 9,
+     "terms": [
+      "news",
+      "people",
+      "stories",
+      "social",
+      "breaking"
+     ],
+     "distance": 1.608
+    },
+    {
+     "cluster": 46,
+     "terms": [
+      "video",
+      "videos",
+      "movies",
+      "watch",
+      "content"
+     ],
+     "distance": 1.658
+    }
+   ],
+   "edge_apps": [
+    {
+     "trackName": "liferu - AI Journal",
+     "genre": "Lifestyle",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "ChatSUTRA",
+     "genre": "Productivity",
+     "userRatingCount": 12
+    },
+    {
+     "trackName": "小説Viewer",
+     "genre": "Book",
+     "userRatingCount": 2
+    },
+    {
+     "trackName": "Ramble: AI Thought Partner",
+     "genre": "Productivity",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "AI Helper - AI Chatbot",
+     "genre": "Productivity",
+     "userRatingCount": 7
+    },
+    {
+     "trackName": "Text Analyzer - Chat Insights",
+     "genre": "Utilities",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "SOM AI",
+     "genre": "Productivity",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "What Should I Say AI",
+     "genre": "Lifestyle",
+     "userRatingCount": 0
+    }
+   ]
+  },
+  {
+   "center": [
+    -0.327,
+    -0.901
+   ],
+   "cells": 10,
+   "area": 0.0388,
+   "apps_inside": 328,
+   "inside_density": 32.8,
+   "ring_density": 82.46,
+   "contrast": 2.44,
+   "dip_ratio": 0.444,
+   "enclosure": 0.85,
+   "nearest_clusters": [
+    {
+     "cluster": 37,
+     "terms": [
+      "charging",
+      "gps",
+      "vehicle",
+      "fleet",
+      "tracking"
+     ],
+     "distance": 0.31
+    },
+    {
+     "cluster": 39,
+     "terms": [
+      "control",
+      "bluetooth",
+      "devices",
+      "smart",
+      "device"
+     ],
+     "distance": 0.974
+    },
+    {
+     "cluster": 23,
+     "terms": [
+      "property",
+      "management",
+      "estate",
+      "mobile",
+      "maintenance"
+     ],
+     "distance": 1.141
+    },
+    {
+     "cluster": 18,
+     "terms": [
+      "travel",
+      "trip",
+      "map",
+      "route",
+      "places"
+     ],
+     "distance": 1.402
+    }
+   ],
+   "edge_apps": [
+    {
+     "trackName": "RCX Logística",
+     "genre": "Utilities",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Ritual",
+     "genre": "Lifestyle",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "ImoLaza",
+     "genre": "Lifestyle",
+     "userRatingCount": 28
+    },
+    {
+     "trackName": "Marina Port Vell",
+     "genre": "Business",
+     "userRatingCount": 1
+    },
+    {
+     "trackName": "Siu Mobile Feira de Santana",
+     "genre": "Navigation",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Troober Technicians",
+     "genre": "Business",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "HMS Express",
+     "genre": "Business",
+     "userRatingCount": 10
+    },
+    {
+     "trackName": "innoQR",
+     "genre": "Developer Tools",
+     "userRatingCount": 0
+    }
+   ]
+  },
+  {
+   "center": [
+    -1.027,
+    0.453
+   ],
+   "cells": 4,
+   "area": 0.0155,
+   "apps_inside": 64,
+   "inside_density": 16.0,
+   "ring_density": 85.94,
+   "contrast": 5.06,
+   "dip_ratio": 0.216,
+   "enclosure": 0.768,
+   "nearest_clusters": [
+    {
+     "cluster": 17,
+     "terms": [
+      "control",
+      "video",
+      "camera",
+      "vpn",
+      "device"
+     ],
+     "distance": 0.786
+    },
+    {
+     "cluster": 39,
+     "terms": [
+      "control",
+      "bluetooth",
+      "devices",
+      "smart",
+      "device"
+     ],
+     "distance": 0.86
+    },
+    {
+     "cluster": 1,
+     "terms": [
+      "weather",
+      "map",
+      "location",
+      "gps",
+      "forecast"
+     ],
+     "distance": 1.032
+    },
+    {
+     "cluster": 42,
+     "terms": [
+      "calculator",
+      "calculations",
+      "calculate",
+      "species",
+      "reality"
+     ],
+     "distance": 1.423
+    }
+   ],
+   "edge_apps": [
+    {
+     "trackName": "CtRWCampRobotControl",
+     "genre": "Education",
+     "userRatingCount": 1
+    },
+    {
+     "trackName": "MT5000",
+     "genre": "Utilities",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Martin-Till Smart Clean 2",
+     "genre": "Utilities",
+     "userRatingCount": 4
+    },
+    {
+     "trackName": "Sceene App",
+     "genre": "Lifestyle",
+     "userRatingCount": 16
+    },
+    {
+     "trackName": "EMF Detector - EMF Meter",
+     "genre": "Utilities",
+     "userRatingCount": 9
+    },
+    {
+     "trackName": "ProAir",
+     "genre": "Utilities",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Air Command Dual",
+     "genre": "Utilities",
+     "userRatingCount": 10
+    },
+    {
+     "trackName": "Realm App",
+     "genre": "Developer Tools",
+     "userRatingCount": 0
+    }
+   ]
+  },
+  {
+   "center": [
+    0.93,
+    -3.334
+   ],
+   "cells": 7,
+   "area": 0.0272,
+   "apps_inside": 236,
+   "inside_density": 33.71,
+   "ring_density": 98.24,
+   "contrast": 2.83,
+   "dip_ratio": 0.416,
+   "enclosure": 0.787,
+   "nearest_clusters": [
+    {
+     "cluster": 7,
+     "terms": [
+      "shop",
+      "products",
+      "shopping",
+      "fashion",
+      "items"
+     ],
+     "distance": 0.208
+    },
+    {
+     "cluster": 26,
+     "terms": [
+      "order",
+      "coffee",
+      "rewards",
+      "store",
+      "ordering"
+     ],
+     "distance": 1.114
+    },
+    {
+     "cluster": 6,
+     "terms": [
+      "お店からメッセージが届くので",
+      "いつでも最新の情報がご確認いただけます",
+      "本アプリを利用して以下のことが行えます",
+      "このアプリでは",
+      "最新情報をチェック"
+     ],
+     "distance": 1.151
+    },
+    {
+     "cluster": 33,
+     "terms": [
+      "sales",
+      "products",
+      "customers",
+      "orders",
+      "delivery"
+     ],
+     "distance": 1.338
+    }
+   ],
+   "edge_apps": [
+    {
+     "trackName": "ZIPPY Kidstore",
+     "genre": "Shopping",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Lagoons",
+     "genre": "Entertainment",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "SD Jewelry",
+     "genre": "Shopping",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "丽家宝贝—全球育婴优品提供者",
+     "genre": "Shopping",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "TAMLER",
+     "genre": "Lifestyle",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "WhatSake - For Sake Lovers",
+     "genre": "Food & Drink",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "BohoBlu Live",
+     "genre": "Shopping",
+     "userRatingCount": 102
+    },
+    {
+     "trackName": "Holy Thrift",
+     "genre": "Lifestyle",
+     "userRatingCount": 24
+    }
+   ]
+  },
+  {
+   "center": [
+    3.28,
+    -2.239
+   ],
+   "cells": 7,
+   "area": 0.0272,
+   "apps_inside": 254,
+   "inside_density": 36.29,
+   "ring_density": 105.63,
+   "contrast": 2.83,
+   "dip_ratio": 0.44,
+   "enclosure": 0.816,
+   "nearest_clusters": [
+    {
+     "cluster": 49,
+     "terms": [
+      "financial",
+      "money",
+      "expenses",
+      "spending",
+      "income"
+     ],
+     "distance": 0.211
+    },
+    {
+     "cluster": 21,
+     "terms": [
+      "banking",
+      "mobile",
+      "accounts",
+      "account",
+      "bank"
+     ],
+     "distance": 1.264
+    },
+    {
+     "cluster": 41,
+     "terms": [
+      "business",
+      "card",
+      "payment",
+      "para",
+      "pos"
+     ],
+     "distance": 1.407
+    },
+    {
+     "cluster": 6,
+     "terms": [
+      "お店からメッセージが届くので",
+      "いつでも最新の情報がご確認いただけます",
+      "本アプリを利用して以下のことが行えます",
+      "このアプリでは",
+      "最新情報をチェック"
+     ],
+     "distance": 1.442
+    }
+   ],
+   "edge_apps": [
+    {
+     "trackName": "Hipotecas España Simulador",
+     "genre": "Finance",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Global VAT Pro: Swift Tax Calc",
+     "genre": "Finance",
+     "userRatingCount": 3
+    },
+    {
+     "trackName": "BBPF Bond Sensitivity Calculator",
+     "genre": "Finance",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Fee Frog",
+     "genre": "Finance",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Property Fixer - Real Estate Investment Calculator",
+     "genre": "Finance",
+     "userRatingCount": 9
+    },
+    {
+     "trackName": "LearnFi",
+     "genre": "Finance",
+     "userRatingCount": 2
+    },
+    {
+     "trackName": "Xapp Pro",
+     "genre": "Productivity",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "ProfitTrack",
+     "genre": "Business",
+     "userRatingCount": 0
+    }
+   ]
+  },
+  {
+   "center": [
+    -0.087,
+    5.245
+   ],
+   "cells": 7,
+   "area": 0.0272,
+   "apps_inside": 262,
+   "inside_density": 37.43,
+   "ring_density": 108.53,
+   "contrast": 2.82,
+   "dip_ratio": 0.432,
+   "enclosure": 0.852,
+   "nearest_clusters": [
+    {
+     "cluster": 27,
+     "terms": [
+      "words",
+      "language",
+      "english",
+      "learn",
+      "learning"
+     ],
+     "distance": 0.442
+    },
+    {
+     "cluster": 14,
+     "terms": [
+      "voice",
+      "text",
+      "speech",
+      "audio",
+      "speak"
+     ],
+     "distance": 0.791
+    },
+    {
+     "cluster": 2,
+     "terms": [
+      "music",
+      "sound",
+      "audio",
+      "sounds",
+      "song"
+     ],
+     "distance": 1.715
+    },
+    {
+     "cluster": 31,
+     "terms": [
+      "notes",
+      "books",
+      "text",
+      "reading",
+      "write"
+     ],
+     "distance": 1.822
+    }
+   ],
+   "edge_apps": [
+    {
+     "trackName": "SpeakRPG: Voice Language RPG",
+     "genre": "Education",
+     "userRatingCount": 4
+    },
+    {
+     "trackName": "SogaType",
+     "genre": "Utilities",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Bunvox",
+     "genre": "Book",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Rhyme and Reason",
+     "genre": "Education",
+     "userRatingCount": 1
+    },
+    {
+     "trackName": "Tifinagh Ignite",
+     "genre": "Education",
+     "userRatingCount": 1
+    },
+    {
+     "trackName": "Rhymer — Рифма к слову Стихи",
+     "genre": "Reference",
+     "userRatingCount": 6
+    },
+    {
+     "trackName": "Verbasizer",
+     "genre": "Utilities",
+     "userRatingCount": 1
+    },
+    {
+     "trackName": "Barnvisor vol.1",
+     "genre": "Education",
+     "userRatingCount": 0
+    }
+   ]
+  },
+  {
+   "center": [
+    3.22,
+    -1.382
+   ],
+   "cells": 6,
+   "area": 0.0233,
+   "apps_inside": 386,
+   "inside_density": 64.33,
+   "ring_density": 176.32,
+   "contrast": 2.7,
+   "dip_ratio": 0.407,
+   "enclosure": 0.887,
+   "nearest_clusters": [
+    {
+     "cluster": 21,
+     "terms": [
+      "banking",
+      "mobile",
+      "accounts",
+      "account",
+      "bank"
+     ],
+     "distance": 0.405
+    },
+    {
+     "cluster": 49,
+     "terms": [
+      "financial",
+      "money",
+      "expenses",
+      "spending",
+      "income"
+     ],
+     "distance": 0.649
+    },
+    {
+     "cluster": 41,
+     "terms": [
+      "business",
+      "card",
+      "payment",
+      "para",
+      "pos"
+     ],
+     "distance": 1.097
+    },
+    {
+     "cluster": 11,
+     "terms": [
+      "management",
+      "mobile",
+      "job",
+      "work",
+      "employees"
+     ],
+     "distance": 1.885
+    }
+   ],
+   "edge_apps": [
+    {
+     "trackName": "Nest Pensions",
+     "genre": "Finance",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Seagrave Mortgage by MasonMac",
+     "genre": "Finance",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Gold Star FS - myFS",
+     "genre": "Business",
+     "userRatingCount": 1
+    },
+    {
+     "trackName": "AlcoCardManager",
+     "genre": "Finance",
+     "userRatingCount": 1
+    },
+    {
+     "trackName": "Root Mortgage",
+     "genre": "Finance",
+     "userRatingCount": 2
+    },
+    {
+     "trackName": "My Financial Expert",
+     "genre": "Finance",
+     "userRatingCount": 28
+    },
+    {
+     "trackName": "Moneey App: Better Than A Bank",
+     "genre": "Finance",
+     "userRatingCount": 42
+    },
+    {
+     "trackName": "Sierra Mortgage",
+     "genre": "Finance",
+     "userRatingCount": 3
+    }
+   ]
+  },
+  {
+   "center": [
+    2.118,
+    -2.017
+   ],
+   "cells": 7,
+   "area": 0.0272,
+   "apps_inside": 222,
+   "inside_density": 31.71,
+   "ring_density": 73.48,
+   "contrast": 2.25,
+   "dip_ratio": 0.461,
+   "enclosure": 0.798,
+   "nearest_clusters": [
+    {
+     "cluster": 41,
+     "terms": [
+      "business",
+      "card",
+      "payment",
+      "para",
+      "pos"
+     ],
+     "distance": 0.581
+    },
+    {
+     "cluster": 6,
+     "terms": [
+      "お店からメッセージが届くので",
+      "いつでも最新の情報がご確認いただけます",
+      "本アプリを利用して以下のことが行えます",
+      "このアプリでは",
+      "最新情報をチェック"
+     ],
+     "distance": 0.856
+    },
+    {
+     "cluster": 33,
+     "terms": [
+      "sales",
+      "products",
+      "customers",
+      "orders",
+      "delivery"
+     ],
+     "distance": 1.145
+    },
+    {
+     "cluster": 49,
+     "terms": [
+      "financial",
+      "money",
+      "expenses",
+      "spending",
+      "income"
+     ],
+     "distance": 1.148
+    }
+   ],
+   "edge_apps": [
+    {
+     "trackName": "BASE ZERO STUDIO",
+     "genre": "Education",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "乐宜付",
+     "genre": "Utilities",
+     "userRatingCount": 5
+    },
+    {
+     "trackName": "Innoswipe",
+     "genre": "Lifestyle",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "BuzzRewards - Surveys for Cash",
+     "genre": "Lifestyle",
+     "userRatingCount": 5
+    },
+    {
+     "trackName": "Rialto App",
+     "genre": "Food & Drink",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Boost Profits",
+     "genre": "Finance",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "FPI Risk Check",
+     "genre": "Business",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Pumpernickel: Paid Surveys",
+     "genre": "Lifestyle",
+     "userRatingCount": 46
+    }
+   ]
+  },
+  {
+   "center": [
+    -1.319,
+    -0.164
+   ],
+   "cells": 8,
+   "area": 0.0311,
+   "apps_inside": 355,
+   "inside_density": 44.38,
+   "ring_density": 88.73,
+   "contrast": 1.96,
+   "dip_ratio": 0.474,
+   "enclosure": 0.869,
+   "nearest_clusters": [
+    {
+     "cluster": 1,
+     "terms": [
+      "weather",
+      "map",
+      "location",
+      "gps",
+      "forecast"
+     ],
+     "distance": 0.456
+    },
+    {
+     "cluster": 39,
+     "terms": [
+      "control",
+      "bluetooth",
+      "devices",
+      "smart",
+      "device"
+     ],
+     "distance": 1.087
+    },
+    {
+     "cluster": 37,
+     "terms": [
+      "charging",
+      "gps",
+      "vehicle",
+      "fleet",
+      "tracking"
+     ],
+     "distance": 1.206
+    },
+    {
+     "cluster": 18,
+     "terms": [
+      "travel",
+      "trip",
+      "map",
+      "route",
+      "places"
+     ],
+     "distance": 1.247
+    }
+   ],
+   "edge_apps": [
+    {
+     "trackName": "Edison Ford",
+     "genre": "Travel",
+     "userRatingCount": 19
+    },
+    {
+     "trackName": "Waltham Abbey Guide",
+     "genre": "Business",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Nunavut Wildflowers",
+     "genre": "Education",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Massachusetts Wildflowers",
+     "genre": "Education",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Oregon Wildflowers",
+     "genre": "Education",
+     "userRatingCount": 13
+    },
+    {
+     "trackName": "New Brunswick Wildflowers",
+     "genre": "Education",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "FARO ScanPlan",
+     "genre": "Productivity",
+     "userRatingCount": 2
+    },
+    {
+     "trackName": "North California Wildflowers",
+     "genre": "Education",
+     "userRatingCount": 20
+    }
+   ]
+  },
+  {
+   "center": [
+    -2.128,
+    -0.687
+   ],
+   "cells": 5,
+   "area": 0.0194,
+   "apps_inside": 144,
+   "inside_density": 28.8,
+   "ring_density": 93.32,
+   "contrast": 3.13,
+   "dip_ratio": 0.37,
+   "enclosure": 0.805,
+   "nearest_clusters": [
+    {
+     "cluster": 1,
+     "terms": [
+      "weather",
+      "map",
+      "location",
+      "gps",
+      "forecast"
+     ],
+     "distance": 0.553
+    },
+    {
+     "cluster": 18,
+     "terms": [
+      "travel",
+      "trip",
+      "map",
+      "route",
+      "places"
+     ],
+     "distance": 0.832
+    },
+    {
+     "cluster": 37,
+     "terms": [
+      "charging",
+      "gps",
+      "vehicle",
+      "fleet",
+      "tracking"
+     ],
+     "distance": 1.62
+    },
+    {
+     "cluster": 42,
+     "terms": [
+      "calculator",
+      "calculations",
+      "calculate",
+      "species",
+      "reality"
+     ],
+     "distance": 1.645
+    }
+   ],
+   "edge_apps": [
+    {
+     "trackName": "Vogelkop Orchid Key",
+     "genre": "Reference",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "SuperWorld Map",
+     "genre": "Social Networking",
+     "userRatingCount": 6
+    },
+    {
+     "trackName": "ParkBound Collections",
+     "genre": "Utilities",
+     "userRatingCount": 29
+    },
+    {
+     "trackName": "PLZA Companion",
+     "genre": "Utilities",
+     "userRatingCount": 31
+    },
+    {
+     "trackName": "Lid Quest",
+     "genre": "Travel",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Voyager Logs",
+     "genre": "Travel",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Up in the Air: Flight Journal",
+     "genre": "Travel",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "SkyCity",
+     "genre": "Entertainment",
+     "userRatingCount": 0
+    }
+   ]
+  },
+  {
+   "center": [
+    -1.482,
+    2.78
+   ],
+   "cells": 5,
+   "area": 0.0194,
+   "apps_inside": 192,
+   "inside_density": 38.4,
+   "ring_density": 88.42,
+   "contrast": 2.24,
+   "dip_ratio": 0.482,
+   "enclosure": 0.826,
+   "nearest_clusters": [
+    {
+     "cluster": 19,
+     "terms": [
+      "photos",
+      "pdf",
+      "photo",
+      "camera",
+      "files"
+     ],
+     "distance": 0.559
+    },
+    {
+     "cluster": 46,
+     "terms": [
+      "video",
+      "videos",
+      "movies",
+      "watch",
+      "content"
+     ],
+     "distance": 0.887
+    },
+    {
+     "cluster": 20,
+     "terms": [
+      "photo",
+      "photos",
+      "image",
+      "create",
+      "art"
+     ],
+     "distance": 0.94
+    },
+    {
+     "cluster": 31,
+     "terms": [
+      "notes",
+      "books",
+      "text",
+      "reading",
+      "write"
+     ],
+     "distance": 1.782
+    }
+   ],
+   "edge_apps": [
+    {
+     "trackName": "PinPost",
+     "genre": "Lifestyle",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Social Media Post Maker: AI",
+     "genre": "Photo & Video",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Frameshotter",
+     "genre": "Photo & Video",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Ambient Study",
+     "genre": "Education",
+     "userRatingCount": 1
+    },
+    {
+     "trackName": "AdsGPT: AI Ad Creator",
+     "genre": "Business",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "repov: A Mini Blog for Moments",
+     "genre": "Social Networking",
+     "userRatingCount": 121
+    },
+    {
+     "trackName": "映像配信アプリ　クラキャスター",
+     "genre": "Photo & Video",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Wakeye",
+     "genre": "Photo & Video",
+     "userRatingCount": 18
+    }
+   ]
+  },
+  {
+   "center": [
+    -0.748,
+    2.243
+   ],
+   "cells": 3,
+   "area": 0.0117,
+   "apps_inside": 70,
+   "inside_density": 23.33,
+   "ring_density": 82.33,
+   "contrast": 3.38,
+   "dip_ratio": 0.37,
+   "enclosure": 0.778,
+   "nearest_clusters": [
+    {
+     "cluster": 19,
+     "terms": [
+      "photos",
+      "pdf",
+      "photo",
+      "camera",
+      "files"
+     ],
+     "distance": 0.454
+    },
+    {
+     "cluster": 17,
+     "terms": [
+      "control",
+      "video",
+      "camera",
+      "vpn",
+      "device"
+     ],
+     "distance": 1.075
+    },
+    {
+     "cluster": 9,
+     "terms": [
+      "news",
+      "people",
+      "stories",
+      "social",
+      "breaking"
+     ],
+     "distance": 1.265
+    },
+    {
+     "cluster": 31,
+     "terms": [
+      "notes",
+      "books",
+      "text",
+      "reading",
+      "write"
+     ],
+     "distance": 1.512
+    }
+   ],
+   "edge_apps": [
+    {
+     "trackName": "Easy Blueprint QC",
+     "genre": "Business",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Right On Page Devtools",
+     "genre": "Developer Tools",
+     "userRatingCount": 3
+    },
+    {
+     "trackName": "Limi - AI Usage Widget",
+     "genre": "Utilities",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "CSV Master",
+     "genre": "Productivity",
+     "userRatingCount": 3
+    },
+    {
+     "trackName": "Identifi: For Creators & Fans",
+     "genre": "Entertainment",
+     "userRatingCount": 9
+    },
+    {
+     "trackName": "Vasini",
+     "genre": "Productivity",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "هيبة الرجال",
+     "genre": "Shopping",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "PINIT Scan",
+     "genre": "Business",
+     "userRatingCount": 0
+    }
+   ]
+  },
+  {
+   "center": [
+    0.628,
+    2.135
+   ],
+   "cells": 3,
+   "area": 0.0117,
+   "apps_inside": 97,
+   "inside_density": 32.33,
+   "ring_density": 105.56,
+   "contrast": 3.17,
+   "dip_ratio": 0.414,
+   "enclosure": 0.794,
+   "nearest_clusters": [
+    {
+     "cluster": 9,
+     "terms": [
+      "news",
+      "people",
+      "stories",
+      "social",
+      "breaking"
+     ],
+     "distance": 0.188
+    },
+    {
+     "cluster": 48,
+     "terms": [
+      "day",
+      "calendar",
+      "clock",
+      "tasks",
+      "days"
+     ],
+     "distance": 1.241
+    },
+    {
+     "cluster": 31,
+     "terms": [
+      "notes",
+      "books",
+      "text",
+      "reading",
+      "write"
+     ],
+     "distance": 1.384
+    },
+    {
+     "cluster": 15,
+     "terms": [
+      "event",
+      "events",
+      "conference",
+      "attendees",
+      "information"
+     ],
+     "distance": 1.436
+    }
+   ],
+   "edge_apps": [
+    {
+     "trackName": "出会いはスグでしょ！SNSマッチングチャットで会える",
+     "genre": "Social Networking",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "하유(HA:U) - 커플 대화 도우미",
+     "genre": "Lifestyle",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Cosmopolitan Magazine US",
+     "genre": "Lifestyle",
+     "userRatingCount": 1665
+    },
+    {
+     "trackName": "Le Poste Parisien",
+     "genre": "Music",
+     "userRatingCount": 1
+    },
+    {
+     "trackName": "REGAS: Resmi Gazete Özetleri",
+     "genre": "Productivity",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Dattelner Morgenpost",
+     "genre": "News",
+     "userRatingCount": 1
+    },
+    {
+     "trackName": "书山觅友",
+     "genre": "Lifestyle",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "CHAZ'BEE",
+     "genre": "Social Networking",
+     "userRatingCount": 0
+    }
+   ]
+  },
+  {
+   "center": [
+    -4.796,
+    0.339
+   ],
+   "cells": 3,
+   "area": 0.0117,
+   "apps_inside": 91,
+   "inside_density": 30.33,
+   "ring_density": 94.12,
+   "contrast": 3.0,
+   "dip_ratio": 0.436,
+   "enclosure": 0.782,
+   "nearest_clusters": [
+    {
+     "cluster": 3,
+     "terms": [
+      "game",
+      "enemies",
+      "battle",
+      "play",
+      "fight"
+     ],
+     "distance": 0.538
+    },
+    {
+     "cluster": 16,
+     "terms": [
+      "game",
+      "car",
+      "racing",
+      "cars",
+      "driving"
+     ],
+     "distance": 0.662
+    },
+    {
+     "cluster": 24,
+     "terms": [
+      "golf",
+      "football",
+      "match",
+      "league",
+      "players"
+     ],
+     "distance": 1.246
+    },
+    {
+     "cluster": 10,
+     "terms": [
+      "game",
+      "adventure",
+      "play",
+      "escape",
+      "world"
+     ],
+     "distance": 1.376
+    }
+   ],
+   "edge_apps": [
+    {
+     "trackName": "Archers Hub",
+     "genre": "Sports",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "JCC SPRTS",
+     "genre": "Sports",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "PoGoMate",
+     "genre": "Reference",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Stability Ball Workouts",
+     "genre": "Health & Fitness",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "VirtualCop",
+     "genre": "Games",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "COC Victory - Data & Copy map",
+     "genre": "Utilities",
+     "userRatingCount": 23
+    },
+    {
+     "trackName": "Free Kick Pro",
+     "genre": "Games",
+     "userRatingCount": 3
+    },
+    {
+     "trackName": "MainCardMMA",
+     "genre": "Sports",
+     "userRatingCount": 61
+    }
+   ]
+  },
+  {
+   "center": [
+    -4.637,
+    2.265
+   ],
+   "cells": 3,
+   "area": 0.0117,
+   "apps_inside": 75,
+   "inside_density": 25.0,
+   "ring_density": 68.37,
+   "contrast": 2.63,
+   "dip_ratio": 0.381,
+   "enclosure": 0.782,
+   "nearest_clusters": [
+    {
+     "cluster": 10,
+     "terms": [
+      "game",
+      "adventure",
+      "play",
+      "escape",
+      "world"
+     ],
+     "distance": 0.639
+    },
+    {
+     "cluster": 34,
+     "terms": [
+      "game",
+      "word",
+      "puzzle",
+      "puzzles",
+      "words"
+     ],
+     "distance": 1.088
+    },
+    {
+     "cluster": 22,
+     "terms": [
+      "pet",
+      "stickers",
+      "kids",
+      "fun",
+      "dog"
+     ],
+     "distance": 1.287
+    },
+    {
+     "cluster": 40,
+     "terms": [
+      "game",
+      "puzzle",
+      "play",
+      "levels",
+      "fun"
+     ],
+     "distance": 1.306
+    }
+   ],
+   "edge_apps": [
+    {
+     "trackName": "My Bad Cat Pet Simulator Game",
+     "genre": "Games",
+     "userRatingCount": 1
+    },
+    {
+     "trackName": "The Conch Shell: Magic answers",
+     "genre": "Entertainment",
+     "userRatingCount": 121
+    },
+    {
+     "trackName": "Resi Dent Challenge",
+     "genre": "Games",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "100 Daddy: Hide and Seek",
+     "genre": "Games",
+     "userRatingCount": 2
+    },
+    {
+     "trackName": "Whales are Mammals!",
+     "genre": "Games",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "Brickfact",
+     "genre": "Shopping",
+     "userRatingCount": 46
+    },
+    {
+     "trackName": "nGon - Shapes and Solids",
+     "genre": "Games",
+     "userRatingCount": 3
+    },
+    {
+     "trackName": "mollyco: sesli masallar",
+     "genre": "Book",
+     "userRatingCount": 0
+    }
+   ]
+  },
+  {
+   "center": [
+    0.449,
+    3.434
+   ],
+   "cells": 3,
+   "area": 0.0117,
+   "apps_inside": 85,
+   "inside_density": 28.33,
+   "ring_density": 73.77,
+   "contrast": 2.51,
+   "dip_ratio": 0.436,
+   "enclosure": 0.77,
+   "nearest_clusters": [
+    {
+     "cluster": 31,
+     "terms": [
+      "notes",
+      "books",
+      "text",
+      "reading",
+      "write"
+     ],
+     "distance": 0.276
+    },
+    {
+     "cluster": 9,
+     "terms": [
+      "news",
+      "people",
+      "stories",
+      "social",
+      "breaking"
+     ],
+     "distance": 1.43
+    },
+    {
+     "cluster": 14,
+     "terms": [
+      "voice",
+      "text",
+      "speech",
+      "audio",
+      "speak"
+     ],
+     "distance": 1.482
+    },
+    {
+     "cluster": 48,
+     "terms": [
+      "day",
+      "calendar",
+      "clock",
+      "tasks",
+      "days"
+     ],
+     "distance": 1.51
+    }
+   ],
+   "edge_apps": [
+    {
+     "trackName": "Quote Widgets",
+     "genre": "Utilities",
+     "userRatingCount": 2
+    },
+    {
+     "trackName": "Jadwaly: AI Study Planner",
+     "genre": "Education",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "GossipAI: Relationship Coach",
+     "genre": "Lifestyle",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "MLSH",
+     "genre": "Education",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "mpengo Quotes",
+     "genre": "Business",
+     "userRatingCount": 2
+    },
+    {
+     "trackName": "Epilogue for Micro.blog",
+     "genre": "Social Networking",
+     "userRatingCount": 10
+    },
+    {
+     "trackName": "Fond: AI Voice Journal & Diary",
+     "genre": "Lifestyle",
+     "userRatingCount": 1
+    },
+    {
+     "trackName": "GH Quotes: Estimate Maker",
+     "genre": "Productivity",
+     "userRatingCount": 0
+    }
+   ]
+  },
+  {
+   "center": [
+    2.602,
+    4.256
+   ],
+   "cells": 3,
+   "area": 0.0117,
+   "apps_inside": 152,
+   "inside_density": 50.67,
+   "ring_density": 127.66,
+   "contrast": 2.47,
+   "dip_ratio": 0.47,
+   "enclosure": 0.897,
+   "nearest_clusters": [
+    {
+     "cluster": 30,
+     "terms": [
+      "school",
+      "district",
+      "student",
+      "parents",
+      "event"
+     ],
+     "distance": 0.428
+    },
+    {
+     "cluster": 5,
+     "terms": [
+      "exam",
+      "questions",
+      "learning",
+      "study",
+      "students"
+     ],
+     "distance": 0.808
+    },
+    {
+     "cluster": 29,
+     "terms": [
+      "sleep",
+      "daily",
+      "habits",
+      "day",
+      "health"
+     ],
+     "distance": 1.504
+    },
+    {
+     "cluster": 48,
+     "terms": [
+      "day",
+      "calendar",
+      "clock",
+      "tasks",
+      "days"
+     ],
+     "distance": 1.804
+    }
+   ],
+   "edge_apps": [
+    {
+     "trackName": "A365",
+     "genre": "Medical",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "AulaNet",
+     "genre": "Education",
+     "userRatingCount": 1
+    },
+    {
+     "trackName": "儿童积分制",
+     "genre": "Utilities",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "STORM University Portal",
+     "genre": "Education",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "UC Mobile",
+     "genre": "Education",
+     "userRatingCount": 0
+    },
+    {
+     "trackName": "The Loyola Maroon Mobile",
+     "genre": "Magazines & Newspapers",
+     "userRatingCount": 12
+    },
+    {
+     "trackName": "Study.com - College Saver",
+     "genre": "Education",
+     "userRatingCount": 23
+    },
+    {
+     "trackName": "StudyPartner",
+     "genre": "Education",
+     "userRatingCount": 8
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+# --- istenen ---
+*.jsonl
+apps.parquet
+finder/apps.parquet
+.venv/
+finder/.venv/
+map/emb/
+map/texts.txt
+__pycache__/
+
+# --- ek: GitHub 100 MiB sınırı / tekrar eden ya da yeniden üretilebilen büyük dosyalar ---
+finder/apps_lite.parquet
+finder/web/
+map/meta.parquet
+map/coords.npy
+map/kmeans_labels.npy
+map/pilot/
+
+# --- ek: çalışma zamanı durumu ve loglar ---
+ids.txt
+done_sitemaps.txt
+sitemap_list.txt
+progress.txt
+lookup_stats.json
+*.log
+.piptmp/
+.duckdb_tmp/
+finder/.duckdb_tmp/
